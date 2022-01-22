@@ -21,8 +21,9 @@ client.on("messageCreate", message => {
             return message.channel.send("Utente non trovato")
         }
         var embed = new Discord.MessageEmbed()
+            .setColor("#00ff34")
             .setTitle(utente.user.tag)
-            .setDescription("L'avatar di questo utente")
+            .setDescription("*Ecco l'avatar di questo utente!*")
             .setImage(utente.user.displayAvatarURL({
                 dynamic: true,
                 format: "png",
