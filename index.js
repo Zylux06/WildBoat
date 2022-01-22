@@ -5,7 +5,7 @@ const client = new Discord.Client(
 
 client.login(process.env.token)
 
-console.on("ready", () => {
+client.on("ready", () => {
     console.log("BOT ONLINE!")
 })
 
