@@ -5,6 +5,10 @@ const client = new Discord.Client(
 
 client.login(process.env.token)
 
+console.on("ready", () => {
+    console.log("BOT ONLINE!")
+})
+
 client.on("messageCreate", message => {
     if (message.content.startsWith("!avatar")) {
         if (message.content.trim() == "!avatar") {
