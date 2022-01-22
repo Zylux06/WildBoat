@@ -32,19 +32,8 @@ client.on("messageCreate", message => {
     }
 })
 
-
 client.on("messageCreate", message => {
-    if (message.content == "!comando") {
-        //Cancellare il canale del comando
-        message.channel.delete();
-        //Cancellare un canale specifico
-        var canale = client.channels.cache.get("927196707257745409"); 
-        canale.delete();
-    }
-})
-
-client.on("messageCreate", message => {
-    if (message.content == "!comando") {
+    if (message.content == "!embed") {
         const embed = new Discord.MessageEmbed()
             .setTitle("Titolo") //Titolo
             .setColor("#34a42d") // Colore principale
