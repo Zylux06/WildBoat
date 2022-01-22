@@ -3,7 +3,7 @@ const client = new Discord.Client(
     { intents:["GUILDS", "GUILD_MEMBERS", "GUILD_MESSAGES"] }
 )
 
-client.login("OTM0MTE1Nzk5ODc3MTYxMDEw.YerZIQ.MKrj3k9AzvLG-yPQX5vZnmk61Lc")
+client.login(process.env.token)
 
 client.on("messageCreate", message => {
     if (message.content.startsWith("!avatar")) {
