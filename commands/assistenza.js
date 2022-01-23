@@ -1,8 +1,8 @@
 const Discord = require("discord.js")
 
 module.exports = {
-    name: "assistenza",
-    description: "comando per l'assistenza",
+    name: "ban",
+    description: "comando per il ban",
     execute(message, args) {
             var utente = message.mentions.members.first();
             if (!message.member.permissions.has('BAN_MEMBERS')) {
