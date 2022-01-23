@@ -9,6 +9,29 @@ client.on("ready", () => {
     console.log("BOT ONLINE!")
 })
 
+const fs = require("fs");
+
+client.commands = new Discord.Collection();
+
+const commandsFiles = fs.readdirSync("./commands").filter(file => file.endsWith(".js"));
+for(const file of commandsFiles) {
+    var command = require(`./commands/${files}`);
+    client.commands.set(command.name, command);
+}
+
+client.on("message", message => {
+    const prefix = "w!";
+
+    if (!message.content.startsWith(prefix) || message.author.bot) return
+
+    const args = message.content.slice(prefix.length).trim().split(/ +/);
+    const command = args.shift().toLocaleLowerCase();
+
+    if (!client.commands.has(commad)) return
+
+    client.commands.get(command).execute(message, args);
+})
+
 client.on("messageCreate", message => {
     if (message.content.startsWith("!avatar")) {
         if (message.content.trim() == "!avatar") {
