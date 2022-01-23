@@ -19,7 +19,7 @@ for(const file of commandsFiles) {
     client.commands.set(command.name, command);
 }
 
-client.on("message", message => {
+client.on("messageCreate", message => {
     const prefix = "w!";
 
     if (!message.content.startsWith(prefix) || message.author.bot) return
