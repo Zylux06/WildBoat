@@ -9,6 +9,7 @@ client.on("ready", () => {
     console.log("BOT ONLINE!")
 })
 
+
 const fs = require("fs");
 
 client.commands = new Discord.Collection();
