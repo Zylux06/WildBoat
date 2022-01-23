@@ -28,7 +28,7 @@ client.on("messageCreate", message => {
     const args = message.content.slice(prefix.length).trim().split(/ +/);
     const command = args.shift().toLocaleLowerCase();
 
-    if (!client.commands.has(commad)) return
+    if (!client.commands.has(command)) return
 
     client.commands.get(command).execute(message, args);
 })
