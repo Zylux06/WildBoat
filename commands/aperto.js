@@ -4,7 +4,6 @@ module.exports = {
     name: "aperto",
     description: "comunicare l'apertura dei bandi Staff!",
     execute(message, args) {
-    if (message.content == "!aperto") {
     const embed = new Discord.MessageEmbed()
         .setTitle("Bandi Staff Aperti!") 
         .setColor("RANDOM") 
@@ -14,5 +13,5 @@ module.exports = {
         .setFooter("Bandi Staff Aperti") 
         .setTimestamp() 
     message.channel.send({embeds: [embed]})
-}
+    
    }}
