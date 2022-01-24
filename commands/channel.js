@@ -1,8 +1,8 @@
 const Discord = require("discord.js")
 
 module.exports = {
-    name: "avatar",
-    description: "vedere l'avatar di un utente!",
+    name: "channel",
+    description: "per vedere le info su un canale",
     execute(message, args) {
         if (message.content.startsWith("!channelinfo")) {
             if (message.content == "!channelinfo") {
