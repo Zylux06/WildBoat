@@ -1,21 +1,26 @@
 const Discord = require("discord.js")
 
 module.exports = {
-    name: "aperto",
-    description: "apertura bandi staff",
+    name: "avatar",
+    description: "vedere un avatar di un utente",
     execute(message, args) {
-        var utente = message.mentions.members.first();
-        if (!message.member.permissions.has('ADMINISTRATOR')) {
-            return message.channel.send('Non hai il permesso di usare questo comando!');
+            if (message.content.trim() == "!avatar") {
+                var utente = message.member;
+            }
+            else {
+                var utente = message.mentions.members.first();
+            }
+            if (!utente) {
+                return message.channel.send("Utente non trovato")
+            }
+            var embed = new Discord.MessageEmbed()
+                .setTitle(utente.user.tag)
+                .setDescription("L'avatar di questo utente")
+                .setImage(utente.user.displayAvatarURL({
+                    dynamic: true,
+                    format: "png",
+                    size: 512
+                }))
+            message.channel.send({ embeds: [embed] })
         }
-        if (!utente) {
-            return message.channel.send('Non hai menzionato nessun utente');
-        }
-        utente.ban()
-            .then(() => {
-                var embed = new Discord.MessageEmbed()
-                    .setTitle(`${utente.user.username} bannato`)
-                    .setDescription(`Utente bannato da ${message.author.toString()}`)
-
-                message.channel.send({ embeds: [embed] })
-            })
+    }
