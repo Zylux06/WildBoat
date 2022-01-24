@@ -14,6 +14,7 @@ module.exports = {
         .setThumbnail("https://cdn.discordapp.com/icons/726687973176770560/a_04647115fc01336c6390dc1c63051b96.png?size=128") 
         .setFooter("Assistenza") 
         .setTimestamp() 
-        message.channel.send({content: "everyone", embeds: [embed]})
+        
+        message.channel.send({ embeds: [embed] })
     
    }}
