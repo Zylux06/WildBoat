@@ -22,4 +22,4 @@ module.exports = {
                 setTimeout(() => msg.delete(), 5000)
         })
     }
-}
+}   
