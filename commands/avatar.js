@@ -4,9 +4,9 @@ module.exports = {
     name: "avatar",
     description: "vedere un avatar di un utente",
     execute(message, args) {
-            if (message.content.trim() == "!avatar") {
-                var utente = message.member;
-            }
+        if (message.content.trim() == "!avatar") {
+            var utente = message.member;
+        }
             else {
                 var utente = message.mentions.members.first();
             }
