@@ -4,7 +4,7 @@ module.exports = {
     name: "sup",
     description: "per richiedere assistenza tramite comando",
     execute(message, args) {
-        message.channel.send("<@&925379991263395920");
+        message.channel.send("<@&925379991263395920>");
 
     const embed = new Discord.MessageEmbed()
         .setTitle("Richiesta Assistenza") 
