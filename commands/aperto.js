@@ -4,7 +4,7 @@ module.exports = {
     name: "aperto",
     description: "comunicare l'apertura dei bandi Staff!",
     execute(message, args) {
-        if (!message.member.permissions.has('ADMINISTRATOR')) {
+        if (!message.member.permissions.has('MANAGE_MESSAGES')) {
             return message.channel.send('Non hai il permesso');
         }
 
