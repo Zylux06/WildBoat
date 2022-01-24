@@ -19,7 +19,7 @@ module.exports = {
                     var embed = new Discord.MessageEmbed()
                     .setColor('RANDOM')
                     .setFooter(`Utente bannato`)
-                    .setTitle(`${utente.user.username} E' stato bannato dal server correttamente!`)
+                    .setTitle(`${utente.user.username} E' stato bannato dal server correttamente.`)
                     .setDescription(`L'utente è stato bannato da ${message,author.toString()}`)
     
                     message.channel.send({ embeds: [embed] })
