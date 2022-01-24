@@ -53,4 +53,5 @@ module.exports = {
                 .addField("Channel created", canale.createdAt.toDateString())
             message.channel.send({ embeds: [embed] })
         }
-    }}
+    }
+}    
