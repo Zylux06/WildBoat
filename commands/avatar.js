@@ -1,9 +1,8 @@
-
 const Discord = require("discord.js")
 
 module.exports = {
     name: "avatar",
-    description: "mostrare un'avatar di un utente",
+    description: "vedere l'avatar di un utente!",
     execute(message, args) {
         if (message.content.startsWith("!avatar")) {
             if (message.content.trim() == "!avatar") {
