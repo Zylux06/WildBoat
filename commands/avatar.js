@@ -29,7 +29,7 @@ module.exports = {
             var embed = new Discord.MessageEmbed()
             .setTitle(utente.user.tag)
             .setColor("#ee00ff")
-            .setDescription("`L'avatar di questo utente:`")
+            .setDescription("`L'avatar di questo det utente:`")
             .setImage(utente.user.displayAvatarURL({
                     dynamic: true,
                     format: "png",
