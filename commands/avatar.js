@@ -13,12 +13,24 @@ module.exports = {
                 var utente = message.mentions.members.first();
             }
             if (!utente) {
-                return message.channel.send("Utente non trovato")
+                var embed2 = new Discord.MessageEmbed()
+                .setTitle("**Utente non trovato**")
+                .setDescription("L'utente che hai `scritto` potrebbe essere __sbagliato__ o __inesistente__!")
+                .setColor("#ff0000") // Colore principale
+    
+                message.channel.send({ embeds: [embed2] })
+                .then(msg => {
+                    setTimeout(() => msg.delete(), 3000)
+                  })
+                  .catch()
+    
+            return
             }
             var embed = new Discord.MessageEmbed()
-                .setTitle(utente.user.tag)
-                .setDescription("L'avatar di questo utente")
-                .setImage(utente.user.displayAvatarURL({
+            .setTitle(utente.user.tag)
+            .setColor("#ee00ff")
+            .setDescription("`L'avatar di questo utente:`")
+            .setImage(utente.user.displayAvatarURL({
                     dynamic: true,
                     format: "png",
                     size: 512
