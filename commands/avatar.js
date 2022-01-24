@@ -13,7 +13,7 @@ module.exports = {
                 var utente = message.mentions.members.first();
             }
             if (!utente) {
-                return message.channel.send("Utente non trovato")
+                return message.channel.send("Utente non trovato!")
             }
             var embed = new Discord.MessageEmbed()
                 .setTitle(utente.user.tag)
