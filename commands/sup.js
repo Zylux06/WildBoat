@@ -4,7 +4,8 @@ module.exports = {
     name: "sup",
     description: "per richiedere assistenza tramite comando",
     execute(message, args) {
-        
+        message.channel.send("<@925379991263395920");
+
     const embed = new Discord.MessageEmbed()
         .setTitle("Richiesta Assistenza") 
         .setColor("RANDOM") 
@@ -13,6 +14,6 @@ module.exports = {
         .setThumbnail("https://cdn.discordapp.com/icons/726687973176770560/a_04647115fc01336c6390dc1c63051b96.png?size=128") 
         .setFooter("Assistenza") 
         .setTimestamp() 
-        message.channel.send({content: "@everyone", embeds: [embed]})
+        message.channel.send({content: "everyone", embeds: [embed]})
     
    }}
