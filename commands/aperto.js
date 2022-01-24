@@ -16,6 +16,6 @@ module.exports = {
         .setThumbnail("https://cdn.discordapp.com/icons/726687973176770560/a_04647115fc01336c6390dc1c63051b96.png?size=128") 
         .setFooter("Bandi Staff Aperti") 
         .setTimestamp() 
-    message.channel.send({embeds: [embed]})
+        message.channel.send({content: "@everyone", embeds: [embed]})
     
    }}
