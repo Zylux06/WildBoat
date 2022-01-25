@@ -18,10 +18,7 @@ module.exports = {
     
             //Messaggio classico
             message.channel.send(testo)
-            .then(msg => {
-                msg.react("👍🏻")
-                msg.react("👎🏻")
-              })
+            
     
             //Embed
             var embed = new Discord.MessageEmbed()
@@ -29,5 +26,9 @@ module.exports = {
                 .setDescription(testo)
     
             message.channel.send({embeds: [embed]})
+            .then(msg => {
+                msg.react("👍🏻")
+                msg.react("👎🏻")
+              })
         }
     }
