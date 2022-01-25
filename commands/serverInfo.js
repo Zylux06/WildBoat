@@ -8,7 +8,7 @@ module.exports = {
             var server = message.member.guild;
             var embed = new Discord.MessageEmbed()
                 .setTitle(server.name)
-                .setDescription("Tutte le info su questo server")
+                .setDescription("All the info of this server")
                 .setThumbnail(server.iconURL())
                 .addField("Owner", client.users.cache.get(server.ownerId).username, true)
                 .addField("Server id", server.id, true)
@@ -18,4 +18,4 @@ module.exports = {
                 .addField("Boost level", "Level " + (server.premiumTier != "NONE" ? server.premiumTier : 0) + " (Boost: " + server.premiumSubscriptionCount + ")", true)
             message.channel.send({ embeds: [embed] })
         }
-    }
+    } 
