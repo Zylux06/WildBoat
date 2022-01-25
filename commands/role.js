@@ -2,7 +2,7 @@ const Discord = require('discord.js')
 
 module.exports = {
     name: "role",
-    description: "impostare lo slowmode in un canale",
+    description: "per vedere le info su un ruolo",
     execute(message, args) {
 
             var ruolo = message.mentions.roles.first()
