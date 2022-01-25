@@ -20,7 +20,7 @@ module.exports = {
             //Embed
             var embed = new Discord.MessageEmbed()
                 .setTitle("Sondaggio!")
-                .setDescription(testo)
+                .setDescription(`${message.author.toString()} ha scritto il messaggio:\n${testo}`)
     
             message.channel.send({embeds: [embed]})
             .then(msg => {
