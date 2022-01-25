@@ -5,7 +5,7 @@ module.exports = {
     description: "per vedere le info su il server discord",
     execute(client, message, args) {
 
-            var server = message.member.guild;
+            var server = message.guild;
             var embed = new Discord.MessageEmbed()
                 .setTitle(server.name)
                 .setDescription("All the info of this server")
