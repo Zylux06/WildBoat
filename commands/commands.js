@@ -18,7 +18,7 @@ module.exports = {
             .addField('kick', 'Per espellere una persona sul Server Discord')
             .addField('w!unban', 'Per sbannare una persona dal Server Discord')
             .addField('w!delete', 'Per cancellare i messaggi prima del comando')
-            .addField('w!commands', 'Per vedere tutta la lista dei comandi del bot')
+            .addField('w!commands', 'Per vedere tutta la lista completa dei comandi del bot')
             message.channel.send({ embeds: [embed] })
 
     }}
