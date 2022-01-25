@@ -1,5 +1,4 @@
 const { ms } = require('discord.js')
-const Discord = require("discord.js")
 
 module.exports = {
     name: "slowmode",
