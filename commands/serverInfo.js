@@ -3,7 +3,7 @@ const Discord = require("discord.js")
 module.exports = {
     name: "server",
     description: "per vedere le info su il server discord",
-    execute(message, args) {
+    execute(client , message , args) {
 
             var server = message.member.guild;
             var embed = new Discord.MessageEmbed()
