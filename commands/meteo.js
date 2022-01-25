@@ -25,4 +25,4 @@ module.exports = {
             .setTimestamp()
             message.channel.send({content: "@everyone", embeds: [embed]})
 
-    }
+    }}
