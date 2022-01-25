@@ -8,7 +8,7 @@ module.exports = {
         var embed = new Discord.MessageEmbed()
             .setTitle("Commands WildBot!")
             .setColor("RANDOM")
-            .addFields("w!aperto = Per aprire i bandi Staff, comando utilizzabile solo dallo Staff del Server.")
+            .addField('w!aperto', 'comando utilizzabile solo dallo staff')
             message.channel.send({ embeds: [embed] })
 
     }}
