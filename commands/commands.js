@@ -5,7 +5,7 @@ module.exports = {
     description: "lista dei comandi del bot Wild",
     execute(message, args) {
 
-        var embed = new Discord.MessageEmbed()
+        var embed = new Discord.MessageEmbed
             .setTitle("Commands WildBot!")
             .setColor("RANDOM")
             .setFields("w!aperto = Per aprire i bandi Staff, comando utilizzabile solo dallo Staff del Server.")
