@@ -21,7 +21,7 @@ module.exports = {
             .setColor("RANDOM")
             .setDescription(`${message.author.toString()} ha scritto il messaggio\n${testo}`)
             .setThumbnail("https://cdn.discordapp.com/attachments/935655567526068264/935881520596533258/template-sticker-600x600.png")
-            .setImage("https://cdn.discordapp.com/attachments/935655567526068264/935883238784774144/High_resolution_wallpaper_background_ID_77700313362.jpg")
+            .setImage("https://media.discordapp.net/attachments/935655567526068264/935883154034683954/cumulonimbus-5280578_1280.png?width=1014&height=676")
             .setFooter("Previsioni del Meteo a Los Angeles")
             .setTimestamp()
             message.channel.send({content: "@everyone", embeds: [embed]})
