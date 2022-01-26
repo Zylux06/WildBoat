@@ -11,11 +11,12 @@ module.exports = {
                 var utente = message.mentions.members.first();
             }
             if (!utente) {
-                return message.channel.send("Utente non trovato")
+                return message.channel.send("**Non ho trovato l'utente! Assicurati che nel comando ci sia anche il tag dell'utente!**")
             }
             var embed = new Discord.MessageEmbed()
                 .setTitle(utente.user.tag)
-                .setDescription("L'avatar di questo utente")
+                .setColor("#fccf03")
+                .setDescription("**Ecco l'avatar di questo utente!**")
                 .setImage(utente.user.displayAvatarURL({
                     dynamic: true,
                     format: "png",
