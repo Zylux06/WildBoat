@@ -9,12 +9,12 @@ module.exports = {
         }
         
         var embed = new Discord.MessageEmbed()
-        .setTitle("Bandi Staff Aperti!") 
-        .setColor("RANDOM") 
+        .setTitle("‼️ Bandi Staff Aperti ‼️") 
+        .setColor("#ff0000") 
         .setAuthor("Los Angeles RP") 
-        .setDescription("Hey, i bandi staff sono aperti! Ti consigliamo di compilare il modulo con più informazioni possibili.") 
-        .setThumbnail("https://cdn.discordapp.com/icons/726687973176770560/a_04647115fc01336c6390dc1c63051b96.png?size=128") 
-        .setFooter("Bandi Staff Aperti") 
+        .setDescription("__**Ragazzi, i bandi staff sono aperti! Affrettatevi a compilare e inviare il modulo, inoltre vi consigliamo di compilarlo con più informazioni possibili!**__") 
+        .setThumbnail("https://cdn.discordapp.com/emojis/838709960719990834.webp?size=96&quality=lossless") 
+        .setFooter("Apertura Bandi Staff") 
         .setTimestamp() 
         message.channel.send({content: "@everyone", embeds: [embed]})
     
