@@ -17,7 +17,7 @@ module.exports = {
         message.delete()
 
         var embed = new Discord.MessageEmbed()
-            .setTitle("Oggi Piove...")
+            .setTitle("Oggi a Los Angeles Piove...")
             .setColor("RANDOM")
             .setDescription(`${message.author.toString()} ha scritto il messaggio\n${testo}`)
             .setThumbnail("https://cdn.discordapp.com/attachments/935655567526068264/935879402393329704/cosa-fare-a-levanto-quando-piove-gabriele-diwald.png")
