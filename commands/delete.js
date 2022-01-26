@@ -5,17 +5,17 @@ module.exports = {
     description: "cancellazione dei messaggi con delete",
     execute(message, args) {
             if (!message.member.permissions.has("MANAGE_MESSAGES")) {
-                return message.channel.send('Non hai il permesso');
+                return message.channel.send('**Non hai il permesso per eliminare i messaggi!**');
             }
             if (!message.guild.me.permissions.has("MANAGE_MESSAGES")) {
-                return message.channel.send('Non ho il permesso');
+                return message.channel.send('**Non ho i permessi per eliminare i messaggi.**');
             }
             var count = parseInt(message.content.split(/\s+/)[1]); 
             if (!count) {
-                return message.channel.send("Inserisci un numero valido")
+                return message.channel.send("**Inserisce un nuovo valido, info: Il numero deve essere da 0 - 100.**")
             }
             if (count > 100) {
-                return message.channel.send("Non puoi cancellare più di 100 messaggi")
+                return message.channel.send("**Non puoi cancellare più di 100 messaggi per volta.**")
             }
             message.channel.bulkDelete(count, true)
             message.channel.send(count + " messaggi eliminati").then(msg => {

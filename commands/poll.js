@@ -9,18 +9,18 @@ module.exports = {
             var testo;
             testo = args.slice(1).join(" ");
             if (!testo) {
-                return message.channel.send("Inserire un messaggio");
+                return message.channel.send("**Inserisci un messaggio!**");
             }
             if (message.content.includes("@everyone") || message.content.includes("@here")) {
-                return message.channel.send("Non taggare everyone o here");
+                return message.channel.send("**Non taggare everyone o here!**");
             }
             message.delete()
             
-    
-            //Embed
             var embed = new Discord.MessageEmbed()
+            .setColor("RANDOM")
                 .setTitle("Sondaggio!")
-                .setDescription(`${message.author.toString()} ha scritto il messaggio:\n${testo}`)
+                .setThumbnail("https://cdn.discordapp.com/attachments/935655567526068264/935881520596533258/template-sticker-600x600.png")
+                .setDescription(`**${message.author.toString()} Ha scritto il messaggio:\n${testo}**`)
     
             message.channel.send({embeds: [embed]})
             .then(msg => {

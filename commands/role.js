@@ -7,7 +7,7 @@ module.exports = {
 
             var ruolo = message.mentions.roles.first()
             if (!ruolo) {
-                return message.channel.send("Non ho trovato questo ruolo")
+                return message.channel.send("**Hey, non ho trovato questo ruolo, probabilmente l'avrai taggato male o/e non hai taggato nessun ruolo.**")
             }
             var memberCount = message.guild.members.cache.filter(member => member.roles.cache.find(role => role == ruolo)).size;
             var permessiRuolo = new Discord.Permissions(ruolo.permissions.bitfield);
@@ -25,12 +25,13 @@ module.exports = {
             }
             var embed = new Discord.MessageEmbed()
                 .setTitle(ruolo.name)
-                .setDescription("Tutte le statistiche di questo ruolo")
-                .addField("Role ID", ruolo.id, true)
-                .addField("Members", memberCount.toString(), true)
-                .addField("Color", ruolo.hexColor, true)
-                .addField("Role created", ruolo.createdAt.toDateString(), true)
-                .addField("Permissions", elencoPermessi, false)
+                .setDescription("__**Tutte le statistiche di questo ruolo!**__")
+                .setThumbnail("https://cdn.discordapp.com/attachments/935655567526068264/935881520596533258/template-sticker-600x600.png")
+                .addField("**Role ID:**", ruolo.id, true)
+                .addField("**Members:**", memberCount.toString(), true)
+                .addField("**Colore:**", ruolo.hexColor, true)
+                .addField("**Role Created:**", ruolo.createdAt.toDateString(), true)
+                .addField("**Permissions:**", elencoPermessi, false)
             message.channel.send({ embeds: [embed] })
         }
     }
