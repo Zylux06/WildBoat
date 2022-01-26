@@ -1,8 +1,8 @@
 const Discord = require("discord.js")
 
 module.exports = {
-    name: "sole",
-    description: "sole",
+    name: "nevica",
+    description: "nevica",
     execute(message, args) {
 
         var args = message.content.split(/\s+/);
@@ -17,11 +17,11 @@ module.exports = {
         message.delete()
 
         var embed = new Discord.MessageEmbed()
-            .setTitle("Oggi c'è il Sole!")
+            .setTitle("Oggi a Los Angeles Nevica!")
             .setColor("RANDOM")
             .setDescription(`${message.author.toString()} ha scritto il messaggio\n${testo}`)
-            .setThumbnail("https://cdn.discordapp.com/attachments/935655567526068264/935881520596533258/template-sticker-600x600.png")
-            .setImage("https://cdn.discordapp.com/attachments/931126999970361344/935877896378142770/sole-min-scaled-e1610018813683.png")
+            .setImage("https://cdn.discordapp.com/attachments/935655567526068264/935881520596533258/template-sticker-600x600.png")
+            .setImage("https://media.discordapp.net/attachments/935655567526068264/935881043372834937/corbis-42-18240011.png?width=1014&height=676")
             .setFooter("Previsioni del Meteo a Los Angeles")
             .setTimestamp()
             message.channel.send({content: "@everyone", embeds: [embed]})
