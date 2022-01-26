@@ -9,7 +9,7 @@ module.exports = {
             .setTitle("CommandsWildBot!")
             .setColor("#03fc20")
             .setDescription("***I comandi contrassegnati con il simbolo __★__ sono solo utilizzabili dallo Staff del Server.***")
-            .addField('**w!aperto**', '*Per aprire i bandi Staff;*')
+            .addField('**w!aperto**', '*★ Per aprire i bandi Staff;*')
             .addField('**w!avatar**', '*Per vedere un avatar di un utente;*')
             .addField('**w!sup**', '*Per richiedere assistenza allo Staff del Server;*')
             .addField('**w!role**', '*Per vedere le informazioni su un determinato ruolo;*')
@@ -18,12 +18,12 @@ module.exports = {
             .addField('**w!piove**', '*Per annunciare che a Los Angeles sta per piovere;*')
             .addField('**w!nevica**', '*Per annunciare a Los Angeles inizierà a nevicare;*')
             .addField('**w!nuvoloso**', '*Per annunciare che a Los Angeles il tempo inizia a scurirsi di nuvole;*')
-            .addField('**w!ban**', '*Per bannare una persona dal Server Discord;*')
-            .addField('**w!kick**', '*Per espellere una persona sul Server Discord;*')
-            .addField('**w!unban**', '*Per sbannare una persona dal Server Discord;*')
-            .addField('**w!clear**', '*Per cancellare dei messaggi all interno di una chat;*')
+            .addField('**w!ban**', '*★ Per bannare una persona dal Server Discord;*')
+            .addField('**w!kick**', '*★ Per espellere una persona sul Server Discord;*')
+            .addField('**w!unban**', '*★ Per sbannare una persona dal Server Discord;*')
+            .addField('**w!clear**', '*★ Per cancellare dei messaggi all interno di una chat;*')
             .addField('**w!commands**', '*Per vedere tutta la lista completa dei comandi del bot.*')
-            
+
             message.channel.send({ embeds: [embed] })
 
     }}
