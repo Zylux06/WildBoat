@@ -9,6 +9,7 @@ module.exports = {
             .setTitle("CommandsWildBot!")
             .setColor("#03fc20")
             .setDescription("***I comandi contrassegnati con il simbolo __★__ sono solo utilizzabili dallo Staff del Server.***")
+            .setThumbnail("https://cdn.discordapp.com/attachments/935655567526068264/935881520596533258/template-sticker-600x600.png")
             .addField('**w!aperto**', '*★ Per aprire i bandi Staff;*')
             .addField('**w!avatar**', '*Per vedere un avatar di un utente;*')
             .addField('**w!sup**', '*Per richiedere assistenza allo Staff del Server;*')
