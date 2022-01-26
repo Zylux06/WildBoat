@@ -13,8 +13,18 @@ client.on("ready", () => {
 client.on("guildMemberAdd", member => {
     if (member.user.bot) return
     var embed = new Discord.MessageEmbed()
-        .setTitle("WELCOME")
+        .setTitle("Benvenuto/a!")
         .setDescription(`Ciao ${member.toString()}, benvenuto in ${member.guild.name}, sei il **${member.guild.memberCount}° Membro!, questo è il server di supporto ufficiale del Wild Bot! Se hai bisogno d'aiuto chiedi allo Staff del server! Sei il**`)
+
+    client.channels.cache.get("935655246351433758").send({embeds: [embed]}); 
+})
+
+//ADDIO
+client.on("guildMemberRemove", member => {
+    if (member.user.bot) return
+    var embed = new Discord.MessageEmbed()
+        .setTitle("Addio...")
+        .setDescription(`**Ciao ${member.toString()}, ci rivediamo presto qua in ${member.guild.name}!**`)
 
     client.channels.cache.get("935655246351433758").send({embeds: [embed]}); 
 })
