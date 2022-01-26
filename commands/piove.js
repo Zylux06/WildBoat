@@ -20,7 +20,7 @@ module.exports = {
             .setTitle("Oggi a Los Angeles Piove...")
             .setColor("RANDOM")
             .setDescription(`${message.author.toString()} ha scritto il messaggio\n${testo}`)
-            .setImage("https://cdn.discordapp.com/attachments/935655567526068264/935881520596533258/template-sticker-600x600.png")
+            .setThumbnail("https://cdn.discordapp.com/attachments/935655567526068264/935881520596533258/template-sticker-600x600.png")
             .setImage("https://cdn.discordapp.com/attachments/935655567526068264/935879402393329704/cosa-fare-a-levanto-quando-piove-gabriele-diwald.png")
             .setFooter("Previsioni del Meteo a Los Angeles")
             .setTimestamp()
