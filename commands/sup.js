@@ -7,11 +7,11 @@ module.exports = {
         message.channel.send("<@&925379991263395920>");
 
     const embed = new Discord.MessageEmbed()
-        .setTitle("Richiesta Assistenza") 
-        .setColor("RANDOM") 
+        .setTitle("Richiesta Assistenza!") 
+        .setColor("#fc6b03") 
         .setAuthor("Los Angeles RP") 
         .setDescription("Hey, hai appena richiesto l'assistenza dello Staff, attendi... Ti chiediamo di non pingare lo Staff, inoltre inizia già ad esporre il problema!") 
-        .setThumbnail("https://cdn.discordapp.com/icons/726687973176770560/a_04647115fc01336c6390dc1c63051b96.png?size=128") 
+        .setThumbnail("https://cdn.discordapp.com/attachments/935655567526068264/935881520596533258/template-sticker-600x600.png") 
         .setFooter("Assistenza") 
         .setTimestamp() 
         
