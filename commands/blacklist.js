@@ -7,7 +7,7 @@ module.exports = {
         message.channel.send("<@&925379991263395920>");
 
     const embed = new Discord.MessageEmbed()
-        .setTitle("BlackList Utenti") 
+        .setTitle("BlackList Utenti!") 
         .setColor("RANDOM") 
         .setAuthor("Los Angeles RP") 
         .setDescription("Ecco qui tutta la lista degli utenti che hanno copiato gran parte del server!") 
