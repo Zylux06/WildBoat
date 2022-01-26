@@ -9,6 +9,15 @@ client.on("ready", () => {
     console.log("BOT ONLINE!")
 })
 
+//BENVENUTO
+client.on("guildMemberAdd", member => {
+    if (member.user.bot) return
+    var embed = new Discord.MessageEmbed()
+        .setTitle("WELCOME")
+        .setDescription(`Ciao ${member.toString()}, benvenuto in ${member.guild.name}. Sei il **${member.guild.memberCount}° Membro!**`)
+
+    client.channels.cache.get("935655246351433758").send({embeds: [embed]}); 
+})
 
 const fs = require("fs");
 
