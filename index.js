@@ -19,6 +19,12 @@ client.on("guildMemberAdd", member => {
     client.channels.cache.get("935655246351433758").send({embeds: [embed]}); 
 })
 
+// STATS MEMBRI DISCORD
+setInterval(function () {
+    var canale = client.channels.cache.get("935916375636058152");
+    canale.setName(`👾│members: ${canale.guild.memberCount}`);
+}, 1000 * 60 * 5)
+
 const fs = require("fs");
 
 client.commands = new Discord.Collection();
