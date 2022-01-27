@@ -5,6 +5,7 @@ module.exports = {
     description: "per inviare un bug all'interno del bot",
     execute(message, args) {
 
+    var testo;
     const embed = new Discord.MessageEmbed()
         .setTitle("Bug Rilevato!") 
         .setColor("RANDOM") 
@@ -14,6 +15,6 @@ module.exports = {
         .setFooter("Bug")
         .setTimestamp()
 
-        client.channels.cache.get("936316266904436806").send({embeds: [embed]})
+        message.channels.send("936316266904436806").send({embeds: [embed]})
     
    }}
