@@ -5,6 +5,8 @@ module.exports = {
     description: "per inviare un bug all'interno del bot",
     execute(message, args) {
 
+        message.channel.send(`${message.author.toString()} Il Bug è stato inviato correttamente nel canale dei bug, grazie per avercelo segnalato!!`)
+
         var args = message.content.split(/\s+/);
         var testo;
         testo = args.slice(1).join(" ");
