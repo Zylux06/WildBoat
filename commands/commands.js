@@ -6,7 +6,7 @@ module.exports = {
     execute(message, args) {
 
         var embed = new Discord.MessageEmbed()
-            .setTitle("CommandsWildBot!")
+            .setTitle("Commands WildBot!")
             .setColor("#03fc20")
             .setDescription("***I comandi contrassegnati con il simbolo __★__ sono solo utilizzabili dallo Staff del Server.***")
             .setThumbnail("https://cdn.discordapp.com/attachments/935655567526068264/935881520596533258/template-sticker-600x600.png")
