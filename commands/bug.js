@@ -26,6 +26,6 @@ module.exports = {
             .setFooter("Bug Rilevato!")
             .setTimestamp()
 
-            client.channels.cache.get("936316266904436806").send({embeds: [embed]})
+            client.channels.cache.get("936316266904436806").send({content: "@here", embeds: [embed]})
     }
 }
