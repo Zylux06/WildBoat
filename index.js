@@ -26,6 +26,20 @@ client.on("guildMemberAdd", member => {
     client.channels.cache.get("921808183977197668").send({embeds: [embed]}); 
 })
 
+//ADDIO
+client.on("guildMemberRemove", member => {
+    if (member.user.bot) return
+    var embed = new Discord.MessageEmbed()
+        .setTitle("GOODBEY")
+        .setColor("RANDOM")
+        .setDescription(`**Ciao ${member.toString()}, ci rivediamo presto qua in ${member.guild.name}...**`)
+        .setThumbnail("https://cdn.discordapp.com/attachments/935655567526068264/935881520596533258/template-sticker-600x600.png")
+        .setImage("https://cdn.discordapp.com/attachments/934495640807932025/937413556184432690/Los-Angeles.png")
+        .setTimestamp()
+
+    client.channels.cache.get("921808183977197668").send({embeds: [embed]}); 
+})
+
 // STATS MEMBRI DISCORD
 setInterval(function () {
     var canale = client.channels.cache.get("935916375636058152");
