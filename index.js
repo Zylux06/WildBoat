@@ -9,6 +9,23 @@ client.on("ready", () => {
     console.log("BOT ONLINE!")
 })
 
+//BENVENUTO
+client.on("guildMemberAdd", member => {
+    if (member.user.bot) return
+
+    var embed = new Discord.MessageEmbed()
+        .setTitle("👋__Benvenuto/a!__👋")
+        .setColor("RANDOM")
+        .setDescription(`Hey ${member.toString()} sei il ${member.guild.memberCount} membro! Noi Siamo il ${member.guild.name}, abbiamo uno Staff Altamente Collaborativo con tutti i Membri del Nostro Server! Beh, detto questo ti Consiglio di Andare a Vedere il canale di i format dei moduli per scegliere che tipo di ruolo interpretare e dopodichè compilare il modulo in compilazione moduli. Se non capisci qualcosa non esitare a chiedere!
+        Divertiti, ma Presta Attenzione a Non fare Cavolate!`)
+        .setThumbnail("https://cdn.discordapp.com/attachments/935655567526068264/935881520596533258/template-sticker-600x600.png")
+        .setImage("https://cdn.discordapp.com/attachments/934495640807932025/937413556184432690/Los-Angeles.png")
+        .setTimestamp()
+    
+
+    client.channels.cache.get("921808183977197668").send({embeds: [embed]}); 
+})
+
 // STATS MEMBRI DISCORD
 setInterval(function () {
     var canale = client.channels.cache.get("935916375636058152");
