@@ -16,6 +16,7 @@ module.exports = {
             .addField('**w!sup**', '*Per richiedere assistenza allo Staff del Server;*')
             .addField('**w!role**', '*Per vedere le informazioni su un determinato ruolo;*')
             .addField('**w!poll**', '*Per fare un sondaggio;*')
+            .addField('**w!gmail**', '*Per inviare una email a un utente!*')
             .addField('**w!sole**', '*Per annunciare che a Los Angeles ce il sole;*')
             .addField('**w!piove**', '*Per annunciare che a Los Angeles sta per piovere;*')
             .addField('**w!nevica**', '*Per annunciare a Los Angeles inizierà a nevicare;*')
