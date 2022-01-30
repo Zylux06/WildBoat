@@ -19,7 +19,7 @@ module.exports = {
             .setColor("RANDOM")
             .setDescription(`*${message.author.toString()} Ha Inviato una Mail:\n${testo}*`)
             .setThumbnail("https://cdn.discordapp.com/attachments/935655567526068264/935881520596533258/template-sticker-600x600.png")
-            .setFooter("Google Gmail")
+            .setFooter({text: "Google Gmail"})
             .setTimestamp()
             
             message.channel.send({ embeds: [embed] })
