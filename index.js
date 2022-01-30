@@ -34,7 +34,7 @@ client.on("guildMemberRemove", member => {
         .setColor("RANDOM")
         .setDescription(`**Ciao ${member.toString()}, ci rivediamo presto qua in ${member.guild.name}...**`)
         .setThumbnail("https://cdn.discordapp.com/attachments/935655567526068264/935881520596533258/template-sticker-600x600.png")
-        .setImage("https://cdn.discordapp.com/attachments/934495640807932025/937413556184432690/Los-Angeles.png")
+        .setImage("https://cdn.discordapp.com/attachments/935843412056350730/937416556139393084/maxresdefault.png")
         .setTimestamp()
 
     client.channels.cache.get("921808183977197668").send({embeds: [embed]}); 
