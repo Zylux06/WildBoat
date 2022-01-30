@@ -30,7 +30,7 @@ client.on("guildMemberAdd", member => {
 client.on("guildMemberRemove", member => {
     if (member.user.bot) return
     var embed = new Discord.MessageEmbed()
-        .setTitle("GOODBEY")
+        .setTitle("Addio...")
         .setColor("RANDOM")
         .setDescription(`**Ciao ${member.toString()}, ci rivediamo presto qua in ${member.guild.name}...**`)
         .setThumbnail("https://cdn.discordapp.com/attachments/935655567526068264/935881520596533258/template-sticker-600x600.png")
