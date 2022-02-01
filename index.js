@@ -2,11 +2,26 @@ const Discord = require("discord.js")
 global.client = new Discord.Client(
     { intents:["GUILDS", "GUILD_MEMBERS", "GUILD_MESSAGES"] }
 )
+const disbut = require("discord-buttons")
+disbut(Client);
+
+const { MessageButton, MessageActionRow } = require("discord-buttons")
 
 client.login(process.env.token)
 
 client.on("ready", () => {
     console.log("BOT ONLINE!")
+})
+
+client.on("MessageCreate", message => {
+    if (message.content == "!bottoni") {
+        var button = new MessageButton()
+            .setLabel("Clicca Qui")
+            .setStyle("red")
+            .setID("idclicca")
+
+        message.channel.send("Clicca sul il bottone", button)    
+    }
 })
 
 //BENVENUTO
