@@ -14,7 +14,7 @@ client.on("ready", () => {
 })
 
 client.on("MessageCreate", message => {
-    if (message.content == "!bottoni") {
+
         var button = new MessageButton()
             .setLabel("Clicca Qui")
             .setStyle("red")
@@ -22,7 +22,7 @@ client.on("MessageCreate", message => {
 
         message.channel.send("Clicca sul il bottone", button)    
     }
-})
+)
 
 //BENVENUTO
 client.on("guildMemberAdd", member => {
