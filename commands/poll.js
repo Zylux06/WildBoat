@@ -21,6 +21,8 @@ module.exports = {
                 .setTitle("Sondaggio!")
                 .setThumbnail("https://cdn.discordapp.com/attachments/935655567526068264/935881520596533258/template-sticker-600x600.png")
                 .setDescription(`**${message.author.toString()} Ha scritto il messaggio:\n${testo}**`)
+                .setFooter({text: "Sondaggio Server"})
+                .setTimestamp()
     
             message.channel.send({embeds: [embed]})
             .then(msg => {

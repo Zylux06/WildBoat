@@ -13,7 +13,7 @@ module.exports = {
         .setColor("#ff7000") 
         .setAuthor("Los Angeles RP") 
         .setDescription("__**Mi dispiace annunciarvi che i bandi per entrare nello Staff sono attualmente chiusi.**__") 
-        .setThumbnail("https://cdn.discordapp.com/emojis/838709960719990834.webp?size=96&quality=lossless") 
+        .setThumbnail("https://cdn.discordapp.com/attachments/935843412056350730/938513943700312144/200px-Gmail_icon_28202029.png") 
         .setFooter("Bandi Staff") 
         .setTimestamp() 
         message.channel.send({content: "@everyone", embeds: [embed]})
