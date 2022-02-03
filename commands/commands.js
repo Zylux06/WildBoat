@@ -26,6 +26,8 @@ module.exports = {
             .addField('**w!unban**', '*★ Per sbannare una persona dal Server Discord;*')
             .addField('**w!clear**', '*★ Per cancellare dei messaggi all interno di una chat;*')
             .addField('**w!commands**', '*Per vedere tutta la lista completa dei comandi del bot.*')
+            .setFooter({text: "Commands List"})
+            .setTimestamp()
 
             message.channel.send({ embeds: [embed] })
 
