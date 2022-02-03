@@ -56,7 +56,7 @@ for(const file of commandsFiles) {
     client.commands.set(command.name, command);
 }
 
-const commandsFolder = fs.readdirSync("/.commands");
+const commandsFolder = fs.readdirSync("./commands");
 for (const folder of commandsFolder) {
     const commandsFiles = fs.readdirSync(`./commands/${folder}`).filter(file => file.endsWith(".js"));
     for (const files of commandsFiles) {
