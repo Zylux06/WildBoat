@@ -16,7 +16,7 @@ module.exports = {
 
         message.delete()
 
-        var embed = new Discord.MessageEmbed
+        var embed = new Discord.MessageEmbed()
            .setTitle("🌴__**Annuncio!**__🌴")
            .setColor("RANDOM")
            .setDescription(`***${message.author.toString()} ➛ Ha Scritto Questo Messaggio:\n${testo}***`)
