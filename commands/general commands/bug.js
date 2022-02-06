@@ -21,9 +21,8 @@ module.exports = {
         const embed = new Discord.MessageEmbed()
             .setTimestamp("Bug Rilevato!")
             .setColor("RANDOM")
-            .setDescription(`***${message.author.toString()} Ha rilevato questo bug:*** **\n${testo}**`)
+            .setDescription(`***${message.author.toString()} ➛ Ha rilevato questo bug:*** **\n${testo}**`)
             .setThumbnail("https://cdn.discordapp.com/attachments/935655567526068264/935881520596533258/template-sticker-600x600.png")
-            .setImage("https://cdn.discordapp.com/attachments/935843042391371827/936315614425907281/88-512.png")
             .setFooter("Bug Rilevato!")
             .setTimestamp()
 

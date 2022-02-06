@@ -21,7 +21,7 @@ module.exports = {
         const embed = new Discord.MessageEmbed()
             .setTimestamp("👮‍♂️__Richiesta Ruoli__👮‍♂️")
             .setColor("RANDOM")
-            .setDescription(`***${message.author.toString()} Ha richiesto questo/i ruolo/i:*** **\n${testo}**`)
+            .setDescription(`***${message.author.toString()} ➛ Ha richiesto questo/i ruolo/i:*** **\n${testo}**`)
             .setThumbnail("https://cdn.discordapp.com/attachments/935655567526068264/935881520596533258/template-sticker-600x600.png")
             .setFooter("Richiesta/Rimozione Ruoli")
             .setTimestamp()
