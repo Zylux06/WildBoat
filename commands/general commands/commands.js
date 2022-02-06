@@ -15,6 +15,7 @@ module.exports = {
             .addField('**w!aperto**', '*★ Per aprire i bandi Staff;*')
             .addField('**w!chiuso**', '*★ Per chiudere i bandi Staff;*')
             .addField('**w!avatar**', '*Per vedere un avatar di un utente;*')
+            .addField('**w!roles**', '*Per richiedere/rimuovere determinati ruoli nel Server;*')
             .addField('**w!sup**', '*Per richiedere assistenza allo Staff del Server;*')
             .addField('**w!role**', '*Per vedere le informazioni su un determinato ruolo;*')
             .addField('**w!poll**', '*Per fare un sondaggio;*')
