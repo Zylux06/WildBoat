@@ -4,6 +4,7 @@ module.exports = {
     name: "roles",
     description: "per richiedere/rimuovere dei determinati ruoli",
     execute(message, args) {
+        message.channel.send("<@&925379991263395920>");
 
         message.channel.send(`*${message.author.toString()} Grazie per aver fatto richiesta, a breve uno staffer ti darà/rimuoverà il ruolo.*`)
 
@@ -26,6 +27,6 @@ module.exports = {
             .setFooter("Richiesta/Rimozione Ruoli")
             .setTimestamp()
 
-            client.channels.cache.get("939864973302202408").send({content: "@here", embeds: [embed]})
+            client.channels.cache.get("939864973302202408").send({ embeds: [embed] })
 
     }}        
