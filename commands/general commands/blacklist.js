@@ -4,6 +4,8 @@ module.exports = {
     name: "blacklist",
     description: "per far vedere chi ha copiato il L.A.",
     execute(message, args) {
+        
+        message.delete()
 
     const embed = new Discord.MessageEmbed()
         .setTitle("BlackList Utenti!") 

@@ -13,6 +13,8 @@ module.exports = {
             if (!utente) {
                 return message.channel.send("**Non ho trovato l'utente! Assicurati che nel comando ci sia anche il tag dell'utente!**")
             }
+            message.delete()
+            
             var embed = new Discord.MessageEmbed()
                 .setTitle(utente.user.tag)
                 .setColor("#fccf03")

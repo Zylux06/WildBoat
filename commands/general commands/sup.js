@@ -6,6 +6,8 @@ module.exports = {
     execute(message, args) {
         message.channel.send("<@&925379991263395920>");
 
+        message.delete()
+
     const embed = new Discord.MessageEmbed()
         .setTitle("Richiesta Assistenza!") 
         .setColor("#fc6b03") 

@@ -14,6 +14,8 @@ module.exports = {
         if (!utente.kickable) {
             return message.channel.send('**Io non ho il permesso per kickare!**');
         }
+        
+        message.delete()
         utente.kick()
             .then(() => {
                 var embed = new Discord.MessageEmbed()

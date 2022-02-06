@@ -7,6 +7,7 @@ module.exports = {
         if (!message.member.permissions.has('MANAGE_MESSAGES')) {
             return message.channel.send('**Hey, non hai il permesso per eseguire questo determinato comando! Solo lo staff del server può farlo.**');
         }
+        message.delete()
         
         var embed = new Discord.MessageEmbed()
         .setTitle("‼️ Bandi Staff Aperti ‼️") 

@@ -23,6 +23,8 @@ module.exports = {
                     }
                 }
             }
+            message.delete()
+            
             var embed = new Discord.MessageEmbed()
                 .setTitle(ruolo.name)
                 .setDescription("__**Tutte le statistiche di questo ruolo!**__")

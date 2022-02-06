@@ -16,6 +16,7 @@ module.exports = {
         if (message.content.includes("@everyone") || message.content.includes("@here")) {
             return message.channel.send("Non taggare everyone o here");
         }
+        message.delete()
 
         const embed = new Discord.MessageEmbed()
             .setTimestamp("Bug Rilevato!")

@@ -17,6 +17,8 @@ module.exports = {
             if (count > 100) {
                 return message.channel.send("**Non puoi cancellare più di 100 messaggi per volta.**")
             }
+            message.delete()
+
             message.channel.bulkDelete(count, true)
             message.channel.send(count + " messaggi eliminati").then(msg => {
                 setTimeout(() => msg.delete(), 5000)

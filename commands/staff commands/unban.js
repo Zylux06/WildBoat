@@ -14,6 +14,7 @@ module.exports = {
         if (!idUtente) {
             return message.channel.send("**Non hai scritto l'id di nessun utente!**");
         }
+        message.delete()
 
         message.guild.members.unban(idUtente)
             .then(() => {

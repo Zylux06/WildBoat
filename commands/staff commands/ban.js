@@ -14,7 +14,10 @@ module.exports = {
         if (!utente.bannable) {
             return message.channel.send('**Non ho il permesso per bannare!**');
         }
+
+        message.delete()
         utente.ban()
+        
             .then(() => {
                 var embed = new Discord.MessageEmbed()
                     .setTitle(`${utente.user.username} bannato`)

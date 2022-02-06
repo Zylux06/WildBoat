@@ -5,6 +5,8 @@ module.exports = {
     description: "lista dei comandi del bot Wild",
     execute(message, args) {
 
+        message.delete()
+
         var embed = new Discord.MessageEmbed()
             .setTitle("📄__Commands WildBot!__📄")
             .setColor("RANDOM")

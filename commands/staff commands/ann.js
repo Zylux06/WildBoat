@@ -19,6 +19,8 @@ module.exports = {
             return message.channel.send("Non taggare everyone o here");
         }
 
+        message.delete()
+
         var embed = new Discord.MessageEmbed()
             .setTitle("__**📢 Azione RP Annullata 📢**__")
             .setColor("WHITE")
