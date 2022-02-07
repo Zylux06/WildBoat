@@ -17,6 +17,7 @@ module.exports = {
             .addField('**w!avatar**', '*Per vedere un avatar di un utente;*')
             .addField('**w!roles**', '*Per richiedere/rimuovere determinati ruoli nel Server;*')
             .addField('**w!sup**', '*Per richiedere assistenza allo Staff del Server;*')
+            .addField('**w!anon**', '*Per scrivere un messaggio anonimo in chat;*')
             .addField('**w!role**', '*Per vedere le informazioni su un determinato ruolo;*')
             .addField('**w!poll**', '*Per fare un sondaggio;*')
             .addField('**w!annuncio**', '*Per poter inviare un annuncio su qualsiasi chat testuale.*')
