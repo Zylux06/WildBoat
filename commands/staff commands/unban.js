@@ -19,7 +19,7 @@ module.exports = {
         message.guild.members.unban(idUtente)
             .then(() => {
                 var embed = new Discord.MessageEmbed()
-                .setAuthor
+                    .setAuthor
                     .setColor("#fc03c2")
                     .setThumbnail("https://cdn.discordapp.com/attachments/935655567526068264/935881520596533258/template-sticker-600x600.png")
                     .setTitle("Utente Sbannato Con Successo")
