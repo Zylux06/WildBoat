@@ -16,6 +16,7 @@ module.exports = {
             .addField("Server id", server.id, true)
             .addField("Members", server.memberCount.toString(), false)
             .addField("Channels", server.channels.cache.size.toString(), false)
+            .addField("Roles", server.roles.cache.size.toString(), true)
             .addField("Server created", server.createdAt.toDateString(), true)
             .addField("Boost level", "Level " + (server.premiumTier != "NONE" ? server.premiumTier : 0) + " (Boost: " + server.premiumSubscriptionCount + ")", true)
         message.channel.send({ embeds: [embed] })
