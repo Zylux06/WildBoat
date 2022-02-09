@@ -8,9 +8,10 @@ module.exports = {
         var server = message.guild;
 
         var embed = new Discord.MessageEmbed()
-            .setTitle(server.name)
+            .setTitle("__ServerInfo!__")
             .setDescription("Tutte le info su questo server")
             .setThumbnail(server.iconURL())
+            .addField("Nome del server", serer.name)
             .addField("Owner", client.users.cache.get(server.ownerId).username, true)
             .addField("Server id", server.id, true)
             .addField("Members", server.memberCount.toString(), false)
