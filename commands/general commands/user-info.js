@@ -8,9 +8,9 @@ module.exports = {
         var server = message.guild;
 
         var embed = new Discord.MessageEmbed()
-            .setTitle("__ServerInfo!__")
+            .setTitle("📌__ServerInfo!__📌")
             .setColor("RANDOM")
-            .setDescription("***Tutte le info su questo Server:***")
+            .setDescription("**↓ Tutte le info su questo Server ↓**")
             .setThumbnail(server.iconURL())
             .addField("**➪ __Nome Del Server:__**", server.name)
             .addField("**➪ __Owner:__**", client.users.cache.get(server.ownerId).username, true)
@@ -20,6 +20,7 @@ module.exports = {
             .addField("**➪ __Canali Testuali:__**", server.channels.cache.size.toString(), false)
             .addField("**➪ __Creazione Del Server__**", server.createdAt.toDateString(), true)
             .addField("**➪ __Boost e Livello:__**", "Level " + (server.premiumTier != "NONE" ? server.premiumTier : 0) + " (Boost: " + server.premiumSubscriptionCount + ")", true)
+
         message.channel.send({ embeds: [embed] })
     }
 }
