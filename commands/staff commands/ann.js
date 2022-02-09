@@ -5,9 +5,9 @@ module.exports = {
     description: "per annullare un'azione RP",
     execute(message, args) {
 
-    if (!message.member.permissions.has('MANAGE_MESSAGES')) {
-            return message.channel.send('**Hey, non hai il permesso per eseguire questo determinato comando! Solo lo staff del server può farlo.**');
-        }
+        if (!message.member.roles.cache.has("925379991263395920")) {
+            return message.channel.send("**Non puoi eseguire questo comando perchè non hai il permesso!**");
+        } 
 
         var args = message.content.split(/\s+/);
         var testo;

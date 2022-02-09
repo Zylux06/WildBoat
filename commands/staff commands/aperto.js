@@ -4,10 +4,12 @@ module.exports = {
     name: "aperto",
     description: "comunicare l'apertura dei bandi Staff!",
     execute(message, args) {
-        if (!message.member.permissions.has('MANAGE_MESSAGES')) {
-            return message.channel.send('**Hey, non hai il permesso per eseguire questo determinato comando! Solo lo staff del server può farlo.**');
-        }
-        message.delete()
+
+        if (!message.member.roles.cache.has("925379991263395920")) {
+            return message.channel.send("**Non puoi eseguire questo comando perchè non hai il permesso!**");
+        } 
+
+       message.delete()
         
         var embed = new Discord.MessageEmbed()
         .setTitle("‼️ Bandi Staff Aperti ‼️") 
