@@ -6,9 +6,13 @@ module.exports = {
     execute(message, args) {
 
         var embed = new Discord.MessageEmbed()
-        .setTitle("Ping del bot")
-        .setDescription("Ecco la latenza del bot")
-        .addField("Ping", `${client.ws.ping}ms`)
+        .setTitle("⭐__Ping Del Bot!__⭐")
+        .setColor("RANDOM")
+        .setDescription("**Ecco la latenza del bot!**")
+        .addField("__Ping:__", `**${client.ws.ping} Ms**`)
+        .setThumbnail("https://cdn.discordapp.com/attachments/935655567526068264/935881520596533258/template-sticker-600x600.png")
+        .setFooter({text: "Ping Bot"})
+        .setTimestamp()
 
     message.channel.send({embeds: [embed]})
 }}
