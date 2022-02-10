@@ -29,4 +29,10 @@ module.exports = {
 
                 message.channel.send({embeds: [embed], components: [row]})
 
-            }}         
+            }}     
+            
+    client.on("clickButton", (button) => {
+        if(button.id == "ciao") {
+            button.message.channel.send("Ciao anche a te!")
+        }
+    })        
