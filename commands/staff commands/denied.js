@@ -1,7 +1,7 @@
 const Discord = require("discord.js")
 
 module.exports = {
-    name: "accepted",
+    name: "denied",
     description: "per accettare un bando staff",
     execute(message, args) {
 
