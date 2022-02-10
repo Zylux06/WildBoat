@@ -1,10 +1,9 @@
-const { MessageActionRow, MessageButton, DiscordAPIError } = require('discord.js');
+const { MessageActionRow, MessageButton, } = require('discord.js');
 
 module.exports = {
     name: "bottoni",
     description: "bottoni discord",
     execute(message, args) {
-
 
         let row = new MessageActionRow()
 			.addComponents(
