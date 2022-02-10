@@ -9,8 +9,8 @@ module.exports = {
 			.addComponents(
 				new MessageButton()
 					.setCustomId('IdBut1')
-					.setLabel('Clicca')
-					.setStyle('green')
+					.setLabel('Clicca!')
+					.setStyle('SECONDARY')
                     .setEmoji('😜')
                     
             )
