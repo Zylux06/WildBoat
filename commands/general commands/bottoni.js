@@ -5,6 +5,7 @@ module.exports = {
     description: "bottoni discord",
     execute(message, args) {
 
+
         let row = new MessageActionRow()
 			.addComponents(
 				new MessageButton()
@@ -12,8 +13,15 @@ module.exports = {
 					.setLabel('Clicca!')
 					.setStyle('SUCCESS')
                     .setEmoji('😜')
-                    
-            )
+            )        
+            .addComponents(
+				new MessageButton()
+					.setCustomId('IdBut2')
+					.setLabel('Cliccami!')
+					.setStyle('PRIMARY')
+                    .setEmoji('📌')
+            )        
+            
                 var embed = new Discord.MessageEmbed()    
                     .setTitle("⭐__Buttons__⭐")
                     .setColor("RANDOM")
