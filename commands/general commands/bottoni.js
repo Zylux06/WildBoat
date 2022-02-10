@@ -33,6 +33,7 @@ module.exports = {
             
     client.on("clickButton", (button) => {
         if(button.id == "ciao") {
+            button.reply.defer()
             button.message.channel.send("Ciao anche a te!")
         }
     })        
