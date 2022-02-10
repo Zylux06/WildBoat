@@ -10,7 +10,7 @@ module.exports = {
 				new MessageButton()
 					.setCustomId('IdBut1')
 					.setLabel('Clicca!')
-					.setStyle('SECONDARY')
+					.setStyle('SUCCESS')
                     .setEmoji('😜')
                     
             )
