@@ -17,7 +17,7 @@ module.exports = {
 				new MessageButton()
 					.setCustomId('IdBut2')
 					.setLabel('Cliccami!')
-					.setStyle('PRIMARY')
+					.setStyle('DANGER')
                     .setEmoji('📌')
             )        
             
@@ -26,7 +26,7 @@ module.exports = {
                     .setColor("RANDOM")
                     .setDescription("Ciao")
 
-
+                    await interaction.reply({ content: 'Hey', components: [row] });
                 message.channel.send({embeds: [embed], components: [row]})
 
             }}     
