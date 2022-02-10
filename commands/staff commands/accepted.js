@@ -23,8 +23,8 @@ module.exports = {
             .setTitle("🌐__Bando Staff Accettato!__🌐")
             .setColor("RANDOM")
             .setDescription(`**✪ ${message.author.toString()} Ha scritto questo commento sull'accettazione del bando: \n${testo}**`)
-            .setThumbnail("https://cdn.discordapp.com/attachments/935655567526068264/941407487414919188/accept10.png")
-            .setImage("https://cdn.discordapp.com/attachments/931126999970361344/935877896378142770/sole-min-scaled-e1610018813683.png")
+            .setThumbnail("https://cdn.discordapp.com/attachments/931126999970361344/935877896378142770/sole-min-scaled-e1610018813683.png")
+            .setImage("https://cdn.discordapp.com/attachments/935655567526068264/941407487414919188/accept10.png")
             .setFooter({text: "Accettazione Bando Staff"})
             .setTimestamp()
 
