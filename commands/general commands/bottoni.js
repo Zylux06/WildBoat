@@ -26,7 +26,6 @@ module.exports = {
                     .setColor("RANDOM")
                     .setDescription("Ciao")
 
-                    await interaction.reply({ content: 'Hey', components: [row] });
                 message.channel.send({embeds: [embed], components: [row]})
 
             }}     
