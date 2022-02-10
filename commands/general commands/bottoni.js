@@ -31,8 +31,3 @@ module.exports = {
 
             }}     
             
-    client.on("clickButton", (button) => {
-        if(button.id == "ciao") {
-            button.reply.defer("ciao anche a voi")
-        }
-    })        
