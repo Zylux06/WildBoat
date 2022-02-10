@@ -11,6 +11,7 @@ module.exports = {
 					.setCustomId('IdBut1')
 					.setLabel('Clicca')
 					.setStyle('green')
+                    .setEmoji('😜')
                     
             )
                 var embed = new Discord.MessageEmbed()    
