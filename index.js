@@ -1,4 +1,4 @@
-const Discord = require("discord.js")
+global.Discord = require("discord.js")
 global.client = new Discord.Client(
     { intents:["GUILDS", "GUILD_MEMBERS", "GUILD_MESSAGES"] }
 )
