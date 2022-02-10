@@ -30,6 +30,8 @@ module.exports = {
             .addField('**w!aperto**', '*★ Per aprire i bandi Staff;*')
             .addField('**w!chiuso**', '*★ Per chiudere i bandi Staff;*')
             .addField('**w!ann**', '*★ Per annullare un Azione RP;*')
+            .addField('**w!accepted**', '*★ Per accettare un bando staff;*')
+            .addField('**w!denied**', '*★ Per rifiutare un bando staff;*')
             .addField('**w!ban**', '*★ Per bannare una persona dal Server Discord;*')
             .addField('**w!kick**', '*★ Per espellere una persona sul Server Discord;*')
             .addField('**w!unban**', '*★ Per sbannare una persona dal Server Discord;*')
