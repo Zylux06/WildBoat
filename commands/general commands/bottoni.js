@@ -8,9 +8,10 @@ module.exports = {
         let row = new MessageActionRow()
 			.addComponents(
 				new MessageButton()
-					.setCustomId('primary')
-					.setLabel('Primary')
-					.setStyle('PRIMARY')
+					.setCustomId('IdBut1')
+					.setLabel('Clicca')
+					.setStyle('green')
+                    
             )
                 var embed = new Discord.MessageEmbed()    
                     .setTitle("⭐__Buttons__⭐")
