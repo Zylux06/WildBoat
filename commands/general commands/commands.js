@@ -34,7 +34,7 @@ module.exports = {
             .addField('**w!denied**', '*★ Per rifiutare un bando staff;*')
             .addField('**w!ban**', '*★ Per bannare una persona dal Server Discord;*')
             .addField('**w!kick**', '*★ Per espellere una persona sul Server Discord;*')
-            .addField('**w!unban**', '*★ Per sbannare una persona dal Server Discord;*')
+            .addField('**w!un-ban**', '*★ Per sbannare una persona dal Server Discord;*')
             .addField('**w!clear**', '*★ Per cancellare dei messaggi all interno di una chat.*')
             .setFooter({text: "Commands List"})
             .setTimestamp()
