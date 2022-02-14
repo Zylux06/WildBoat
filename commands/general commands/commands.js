@@ -8,7 +8,7 @@ module.exports = {
         message.delete()
 
         var embed = new Discord.MessageEmbed()
-            .setTitle("📄__Commands WildBot!__📄")
+            .setTitle("📄__Commands WildBot!__<:942855975566712862:>")
             .setColor("RANDOM")
             .setDescription("**I comandi contrassegnati con il simbolo `★` sono solo utilizzabili dallo Staff del Server.**")
             .setThumbnail("https://cdn.discordapp.com/attachments/935655567526068264/935881520596533258/template-sticker-600x600.png")
