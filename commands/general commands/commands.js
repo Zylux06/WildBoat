@@ -10,7 +10,7 @@ module.exports = {
         var embed = new Discord.MessageEmbed()
             .setTitle("📄__Commands WildBot!__📄")
             .setColor("RANDOM")
-            .setDescription("**<:FP_Regole:942855975566712862> I comandi contrassegnati con il simbolo `★` sono solo utilizzabili dallo Staff del Server.**")
+            .setDescription("**<:FrecciaDestra:942858854247571507> I comandi contrassegnati con il simbolo `★` sono solo utilizzabili dallo Staff del Server.**")
             .setThumbnail("https://cdn.discordapp.com/attachments/935655567526068264/935881520596533258/template-sticker-600x600.png")
             .addField('**w!avatar**', '*Per vedere un avatar di un utente;*')
             .addField('**w!roles**', '*Per richiedere/rimuovere determinati ruoli nel Server;*')
