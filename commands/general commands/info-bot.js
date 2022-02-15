@@ -6,7 +6,7 @@ module.exports = {
     execute(message, args) {
 
         var embed = new Discord.MessageEmbed()
-            .setTitle("-📡__Informazioni Sul Bot__📡")
+            .setTitle("📡__Informazioni Sul Bot__📡")
             .setColor("#1F51FF")
             .setThumbnail("https://cdn.discordapp.com/attachments/935655567526068264/935881520596533258/template-sticker-600x600.png")
             .setDescription("**📌 Ecco tutte le informazioni riguardanti il bot!**")
