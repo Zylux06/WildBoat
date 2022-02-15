@@ -9,7 +9,7 @@ module.exports = {
             .setTitle("-📡__Informazioni Sul Bot__📡")
             .setColor("#1F51FF")
             .setDescription("**📌 Ecco tutte le informazioni riguardanti il bot!**")
-            .addField('Nome del Bot', 'Los Angeles RP Bot')
+            .addField('Nome del Bot', '`Los Angeles RP Bot`')
             .addField('Tag Bot', 'Los Angeles RP Bot#9073')
             .addField('Data Creazione Bot', '21/1/2022')
             .addField('ID Bot', '934115799877161010')
