@@ -17,6 +17,7 @@ module.exports = {
             .addField('**w!sup**', '*Per richiedere assistenza allo Staff del Server;*')
             .addField('**w!anon**', '*Per scrivere un messaggio anonimo in chat;*')
             .addField('**w!role**', '*Per vedere le informazioni su un determinato ruolo;*')
+            .addField('**w!info-bot**', '*Per vedere delle informazioni sul bot;*')
             .addField('**w!server-info**', '*Per ottenere le informazioni sul Server;*')
             .addField('**w!user-info**', '*Per ottenere le informazioni su qualsiasi ruolo;*')
             .addField('**w!poll**', '*Per fare un sondaggio;*')
