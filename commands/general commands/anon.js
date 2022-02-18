@@ -19,9 +19,9 @@ module.exports = {
         var embed = new Discord.MessageEmbed()
             .setTitle("💀__Anon Message!__💀")
             .setColor("BLACK")
-            .setDescription(`**Messaggio Anonimo ➛ \n${testo}**`)
+            .setDescription(`**\n${testo}**`)
             .setThumbnail("https://cdn.discordapp.com/attachments/935843412056350730/940281402816098324/anonimo.png")
-            .setFooter({text: "Anon"})
+            .setFooter({text: "Anon - Unencrypted Message"})
             .setTimestamp()
 
             message.channel.send({ embeds: [embed] })
