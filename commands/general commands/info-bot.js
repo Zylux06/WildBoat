@@ -20,7 +20,7 @@ module.exports = {
             .addField('Editor', '`Visual Studio Code`')
             .addField('Licenza', '`ISC`')
             .addField('Bottoni Implementati', '`No`')
-            .addField('Comandi Totali', '`27`')
+            .addField('Comandi Totali', '`24`')
             .setFooter({text: "Informazioni Bot"})
             .setTimestamp()
 
