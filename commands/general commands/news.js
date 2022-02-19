@@ -6,7 +6,7 @@ module.exports = {
     execute(message, args) {
 
         var testo;
-        testo = args.slice(1).join(" ");
+        testo = args.join(" ");
         if (!testo) {
             return message.channel.send("Inserire un Messaggio");
         }
