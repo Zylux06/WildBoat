@@ -28,7 +28,7 @@ module.exports = {
             .addField('Warnato:', `${UtenteWarnato}`)
             .addField('Warn/Ban', `${NumeroWarn}`)
             .addField('Motivazione:', `${testo}`)
-            .addField('Scadenza', `${ScandenzaWarn}`)
+            .addField('Scadenza', `${ScadenzaWarn}`)
             .setFooter({text: "Utente Warnato"})
             .setTimestamp()
 
