@@ -5,6 +5,8 @@ module.exports = {
     description: "per mandare il link del bot pubblico",
     execute(message, args) {
 
+        message.deleteì()
+
         var embed = new Discord.MessageEmbed()
             .setTitle("🌏__Invito del Bot!__🌏")
             .setColor("RANDOM")
