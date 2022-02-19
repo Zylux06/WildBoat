@@ -18,7 +18,7 @@ module.exports = {
             .setTitle("📩__**Mail Inviata!**__📩")
             .setColor("RANDOM")
             .setDescription(`*${message.author.toString()} Ha Inviato una Mail:\n${testo}*`)
-            .setThumbnail("https://cdn.discordapp.com/attachments/935655567526068264/935881520596533258/template-sticker-600x600.png")
+            .setThumbnail("https://cdn.discordapp.com/attachments/935843412056350730/944646019516354630/Gmail-Logo.png")
             .setFooter({text: "Google Gmail"})
             .setTimestamp()
             

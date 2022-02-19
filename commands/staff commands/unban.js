@@ -20,7 +20,7 @@ module.exports = {
             .then(() => {
                 var embed = new Discord.MessageEmbed()
                     .setAuthor
-                    .setColor("#fc03c2")
+                    .setColor("RANDOM")
                     .setThumbnail("https://cdn.discordapp.com/attachments/935655567526068264/935881520596533258/template-sticker-600x600.png")
                     .setTitle("Utente Sbannato Con Successo")
                     .setDescription("Questo utente è stato sbannato")

@@ -13,10 +13,9 @@ module.exports = {
 
         var embed = new Discord.MessageEmbed()
         .setTitle("‼️ Bandi Staff Chiusi ‼️") 
-        .setColor("#ff7000") 
-        .setAuthor("Los Angeles RP") 
+        .setColor("RANDOM") 
         .setDescription("__**Mi dispiace annunciarvi che i bandi per entrare nello Staff sono attualmente chiusi.**__") 
-        .setThumbnail("https://cdn.discordapp.com/attachments/935843412056350730/938513943700312144/200px-Gmail_icon_28202029.png") 
+        .setThumbnail("https://cdn.discordapp.com/attachments/935843412056350730/944648012649619507/closing-20200214112654660.png") 
         .setFooter("Bandi Staff") 
         .setTimestamp() 
         message.channel.send({content: "@everyone", embeds: [embed]})

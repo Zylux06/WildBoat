@@ -25,7 +25,7 @@ module.exports = {
             .setTitle("__**📢 Azione RP Annullata 📢**__")
             .setColor("WHITE")
             .setDescription(`**${message.author.toString()} Ha Annullato Questa/e Azione/i: \n${testo}**`)
-            .setThumbnail("https://cdn.discordapp.com/attachments/935655567526068264/935881520596533258/template-sticker-600x600.png")
+            .setThumbnail("https://cdn.discordapp.com/attachments/935843412056350730/944647496481775709/Icona-di-Attenzione.png")
             .setFooter({text: "Annullamento Azione/i"})
             .setTimestamp()
             

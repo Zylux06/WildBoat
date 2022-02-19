@@ -19,7 +19,7 @@ module.exports = {
             var embed = new Discord.MessageEmbed()
             .setColor("RANDOM")
                 .setTitle("Sondaggio!")
-                .setThumbnail("https://cdn.discordapp.com/attachments/935655567526068264/935881520596533258/template-sticker-600x600.png")
+                .setThumbnail("https://cdn.discordapp.com/attachments/935843412056350730/944647164913680414/architecture-5928534_960_720.png")
                 .setDescription(`**${message.author.toString()} Ha scritto il messaggio:\n${testo}**`)
                 .setFooter({text: "Sondaggio Server"})
                 .setTimestamp()

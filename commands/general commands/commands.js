@@ -8,10 +8,10 @@ module.exports = {
         message.delete()
 
         var embed = new Discord.MessageEmbed()
-            .setTitle("📄__Commands WildBot!__📄")
+            .setTitle("📄__Commands Wild RP Bot!__📄")
             .setColor("RANDOM")
             .setDescription("**I comandi contrassegnati con il simbolo `★` sono solo utilizzabili dallo Staff del Server.**")
-            .setThumbnail("https://cdn.discordapp.com/attachments/935655567526068264/935881520596533258/template-sticker-600x600.png")
+            .setThumbnail("https://cdn.discordapp.com/attachments/935843412056350730/944645915459866725/check_list_visto_di_conformita.png")
             .addField('**w!avatar**', '*Per vedere un avatar di un utente;*')
             .addField('**w!sup**', '*Per richiedere assistenza allo Staff del Server;*')
             .addField('**w!anon**', '*Per scrivere un messaggio anonimo in chat;*')

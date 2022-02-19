@@ -19,8 +19,8 @@ module.exports = {
         utente.kick()
             .then(() => {
                 var embed = new Discord.MessageEmbed()
-                    .setColor("#b6fc03")
-                    .setThumbnail("https://cdn.discordapp.com/attachments/935655567526068264/935881520596533258/template-sticker-600x600.png")
+                    .setColor("RANDOM")
+                    .setThumbnail("https://discord.com/assets/16e50cf15d1cfdc28964072544f55043.svg")
                     .setTitle(`${utente.user.username} E' Stato Kickato!`)
                     .setDescription(`**__Utente kickato da ${message.author.toString()}__ con successo!**`)
 

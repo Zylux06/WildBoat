@@ -20,7 +20,7 @@ module.exports = {
         
             .then(() => {
                 var embed = new Discord.MessageEmbed()
-                    .setTitle(`${utente.user.username} bannato`)
+                    .setTitle(`${utente.user.username} __Bannato.__`)
                     .setColor("#03fcb1")
                     .setThumbnail("https://cdn.discordapp.com/emojis/891315683231674378.webp?size=96&quality=lossless")
                     .setDescription(`**__L'utente è stato bannato da ${message.author.toString()}__ con successo!**`)
