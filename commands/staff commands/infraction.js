@@ -10,7 +10,7 @@ module.exports = {
         }
 
         var testo;
-        testo = args.join(" ");
+        testo = testo.args.slice(1).join(" ");
         if (!testo) {
             return message.channel.send("Inserire un Messaggio");
         }
