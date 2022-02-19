@@ -28,6 +28,7 @@ module.exports = {
             .addField('**w!nevica**', '*Per annunciare a Los Angeles inizierà a nevicare;*')
             .addField('**w!nuvoloso**', '*Per annunciare che a Los Angeles il tempo inizia a scurirsi di nuvole;*')
             .addField('**w!commands**', '*Per vedere tutta la lista completa dei comandi del bot;*')
+            .addField('**w!infraction**', '*★ Per warnare un utente;*')
             .addField('**w!aperto**', '*★ Per aprire i bandi Staff;*')
             .addField('**w!chiuso**', '*★ Per chiudere i bandi Staff;*')
             .addField('**w!ann**', '*★ Per annullare un Azione RP;*')
