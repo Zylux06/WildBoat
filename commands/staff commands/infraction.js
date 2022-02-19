@@ -18,13 +18,17 @@ module.exports = {
         message.delete()
 
         const UtenteWarnato = message.mentions.members.first()
+        const NumeroWarn = args[1]
+        const ScadenzaWarn = args[2]
 
         var embed = new Discord.MessageEmbed()
             .setTitle("⚠__Infrazione!__⚠")
             .setColor("RED")
             .addField('Moderatore:', `${message.author.toString()}`)
             .addField('Warnato:', `${UtenteWarnato}`)
+            .addField('Warn/Ban', `${NumeroWarn}`)
             .addField('Motivazione:', `${testo}`)
+            .addField('Scadenza', `${ScandenzaWarn}`)
             .setFooter({text: "Utente Warnato"})
             .setTimestamp()
 
