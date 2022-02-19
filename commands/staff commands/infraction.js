@@ -25,6 +25,8 @@ module.exports = {
             .addField('Moderatore:', `${message.author.toString()}`)
             .addField('Warnato:', `${UtenteWarnato}`)
             .addField('Motivazione:', `${testo}`)
+            .setFooter({text: "Utente Warnato"})
+            .setTimestamp()
 
             message.channel.send({ embeds: [embed] })
 
