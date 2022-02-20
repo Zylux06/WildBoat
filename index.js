@@ -13,7 +13,7 @@ client.on("ready", () => {
 
 // TAG BOT + MESSAGGIO
 client.on("messageCreate", message => {
-    if(message.content == "<@934115799877161010>" || message.content == "<@!934115799877161010") message.channel.send(`*Hey ${message.author.toString()}, il mio prefisso è **w!***`)
+    if(message.content == "<@934115799877161010>" || message.content == "<@!934115799877161010>") message.channel.send(`*Hey ${message.author.toString()}, il mio prefisso è **w!***`)
 })
 
 //BENVENUTO
