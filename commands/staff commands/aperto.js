@@ -5,9 +5,9 @@ module.exports = {
     description: "comunicare l'apertura dei bandi Staff!",
     execute(message, args) {
 
-        if (!message.member.roles.cache.has("925379991263395920")) {
-            return message.channel.send("**Non puoi eseguire questo comando perchè non hai il permesso!**");
-        } 
+        if (!message.member.permissions.has('MANAGE_CHANNELS')) {
+            return message.channel.send('*Hey, non puoi eseguire questo comando perchè non hai il permesso!*');
+        }
 
        message.delete()
         
