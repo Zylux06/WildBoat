@@ -5,21 +5,21 @@ module.exports = {
     description: "per warnare un utente",
     execute(message, args) {
 
-        if (!message.member.permissions.has('')) {
-            return message.channel.send('MANAGE_MESSAGE');
+        if (!message.member.permissions.has('MANAGE_MESSAGE')) {
+            return message.channel.send('*Hey, non puoi eseguire questo comando perchè non hai il permesso!*');
         }
-
+        
         var testo;
-        testo = testo = args.slice(3).join(" ");
+        testo = testo = args.slice(2, -2).join(" ");
         if (!testo) {
             return message.channel.send("Inserire un Messaggio");
         }
-
+        
         message.delete()
-
+        
         const UtenteWarnato = message.mentions.members.first()
         const NumeroWarn = args[1]
-        const ScadenzaWarn = args[2]
+        const ScadenzaWarn = args.slice(args.length - 2).join(" ")
 
         var embed = new Discord.MessageEmbed()
             .setTitle("⚠__Infrazione!__⚠")
