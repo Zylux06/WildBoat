@@ -17,15 +17,14 @@ module.exports = {
             
             var embed = new Discord.MessageEmbed()
                 .setTitle(utente.user.tag)
-                .setColor("RANDOM")
-                .setThumbnail("https://cdn.discordapp.com/attachments/935655567526068264/935881520596533258/template-sticker-600x600.png")
-                .setDescription("**Ecco l'avatar di questo utente!**")
+                .setColor("RANDOM")")
+                .setDescription("***➔ Ecco l'avatar ecco di questo utente!***")
                 .setImage(utente.user.displayAvatarURL({
                     dynamic: true,
                     format: "png",
                     size: 512
                 }))
-                .setFooter({text: "Avatar"})
+                .setFooter({text: "Avatar })
                 .setTimestamp()
             message.channel.send({ embeds: [embed] })
         }
