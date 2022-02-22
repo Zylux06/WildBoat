@@ -12,7 +12,6 @@ module.exports = {
             .setColor("RANDOM")
             .setDescription("**I comandi contrassegnati con il simbolo `★` sono solo utilizzabili dallo Staff del Server.**")
             .setThumbnail("https://cdn.discordapp.com/attachments/935843412056350730/944645915459866725/check_list_visto_di_conformita.png")
-            .addField('**w!avatar**', '*Per vedere un avatar di un utente;*')
             .addField('**w!sup**', '*Per richiedere assistenza allo Staff del Server;*')
             .addField('**w!anon**', '*Per scrivere un messaggio anonimo in chat;*')
             .addField('**w!role**', '*Per vedere le informazioni su un determinato ruolo;*')
