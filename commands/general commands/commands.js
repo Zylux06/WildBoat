@@ -18,6 +18,7 @@ module.exports = {
             .addField('**w!info-bot**', '*Per vedere delle informazioni sul bot;*')
             .addField('**w!server-info**', '*Per ottenere le informazioni sul Server;*')
             .addField('**w!user-info**', '*Per ottenere le informazioni su qualsiasi ruolo;*')
+            .addField('**w!afk**', '*Per andare a AFK;*')
             .addField('**w!poll**', '*Per fare un sondaggio;*')
             .addField('**w!news**', '*★ Per mandare una notizia/news;*')
             .addField('**w!annuncio**', '*Per poter inviare un annuncio su qualsiasi chat testuale;*')
