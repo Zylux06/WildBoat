@@ -10,7 +10,7 @@ module.exports = {
         var embed = new Discord.MessageEmbed()
             .setColor("#DBFF33")
             .setTitle("😴__Utente AFK__😴")
-            .setDescription(`**${message.author.toString()} è andato AFK!**`)
+            .setDescription(`**${message.author.toString()} è andato AFK...**`)
             .setFooter({text: "Utente Andato AFK"})
             .setTimestamp()
 
