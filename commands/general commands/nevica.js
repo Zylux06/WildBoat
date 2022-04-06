@@ -17,12 +17,12 @@ module.exports = {
         message.delete()
 
         var embed = new Discord.MessageEmbed()
-            .setTitle("Oggi a Los Angeles Nevica!")
+            .setTitle("__Oggi Nevica!__")
             .setColor("RANDOM")
             .setDescription(`**${message.author.toString()} ha scritto il messaggio\n${testo}**`)
             .setThumbnail("https://cdn.discordapp.com/attachments/935843412056350730/944646273665994792/2744.png")
             .setImage("https://cdn.discordapp.com/attachments/935655567526068264/935880968793915443/neve.png")
-            .setFooter("Previsioni del Meteo a Los Angeles")
+            .setFooter("Previsioni del Meteo")
             .setTimestamp()
             message.channel.send({content: "@everyone", embeds: [embed]})
 

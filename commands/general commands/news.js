@@ -15,7 +15,7 @@ module.exports = {
         var embed = new Discord.MessageEmbed()
             .setTitle("🗓__Telegiornale__🗓")
             .setColor("RANDOM")
-            .setDescription("**Nuova Edizione del TG Fox!**")
+            .setDescription("**Nuova Edizione del TG!**")
             .addField('Conduttore:', `${message.author.toString()}`)
             .addField('Notizia:', `${testo}`)
             .setFooter({text: "TG Fox"})

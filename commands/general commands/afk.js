@@ -5,6 +5,8 @@ module.exports = {
     description: "mettersi afk",
     execute(message, args) {
 
+        message.delete()
+
         var embed = new Discord.MessageEmbed()
             .setColor("#DBFF33")
             .setTitle("😴__Utente AFK__😴")
