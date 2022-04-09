@@ -12,15 +12,15 @@ client.on("ready", () => {
     client.guilds.cache.forEach(guild => {
         guild.commands.create({
             name: "ping",
-            description: "Comando del pong"
+            description: "Comando di test"
         })
     })
 })
 
 client.on("interactionCreate", Interaction => {
-    if(!interaction.isCommand()) return
+    if  (!interaction.isCommand()) return
 
-    if(interaction.commandName == "ping") {
+    if  (interaction.commandName == "ping") {
         interaction.reply("Pongs!!")
     }
 })
