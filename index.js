@@ -17,7 +17,7 @@ client.on("ready", () => {
     })
 })
 
-client.on("interactionCreate", Interaction => {
+client.on("interactionCreate", interaction => {
     if  (!interaction.isCommand()) return
 
     if  (interaction.commandName == "ping") {
