@@ -21,7 +21,7 @@ client.on("interactionCreate", Interaction => {
     if  (!interaction.isCommand()) return
 
     if  (interaction.commandName == "ping") {
-        interaction.reply('Pong!!')
+        interaction.reply("Pong!!")
     }
 })
 
