@@ -20,7 +20,7 @@ client.on("messageCreate", message => {
 // STATS MEMBRI DISCORD
 setInterval(function () {
     var canale = client.channels.cache.get("935916375636058152");
-    canale.setName(`😜 Membri Totali: ${canale.guild.memberCount}`);
+    canale.setName(`🦅┃Membri Totali: ${canale.guild.memberCount}`);
 }, 1000 * 60 * 5)
 const { Interaction } = require("discord.js")
 // FINE STATS
