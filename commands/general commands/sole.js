@@ -22,7 +22,7 @@ module.exports = {
             .setDescription(`**${message.author.toString()} Ha scritto il messaggio\n${testo}**`)
             .setThumbnail("https://discord.com/assets/1038cee47a0a8313dc2d4006145fcee6.svg")
             .setImage("https://cdn.discordapp.com/attachments/931126999970361344/935877896378142770/sole-min-scaled-e1610018813683.png")
-            .setFooter("Previsioni del Meteo a Los Angeles")
+            .setFooter("Previsioni del Meteo")
             .setTimestamp()
             message.channel.send({content: "@everyone", embeds: [embed]})
 
