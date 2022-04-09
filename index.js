@@ -21,7 +21,9 @@ client.on("interactionCreate", interaction => {
     if (!interaction.isCommand()) return
 
     if (interaction.commandName == "ping") {
-        interaction.reply("Pong!")
+        var embed = new Discord.MessageEmbed()
+            .setTile("Pong")
+        interaction.reply({ embeds: [embed] })
     }
 })
 
