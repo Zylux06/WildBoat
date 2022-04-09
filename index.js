@@ -9,22 +9,6 @@ client.login(process.env.token)
 client.on("ready", () => {
     console.log("BOT ONLINE!");
 
-    client.guilds.cache.forEach(guild => {
-        guild.commands.create({
-            name: "ping",
-            description: "Comando di test"
-        })
-    })
-})
-
-client.on("interactionCreate", interaction => {
-    if (!interaction.isCommand()) return
-
-    if (interaction.commandName == "ping") {
-        var embed = new Discord.MessageEmbed()
-            .setTile("Pong")
-        interaction.reply({ embeds: [embed] })
-    }
 })
 
 
