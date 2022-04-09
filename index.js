@@ -1,6 +1,6 @@
 global.Discord = require("discord.js")
 global.client = new Discord.Client(
-    { intents:["GUILDS", "GUILD_MEMBERS", "GUILD_MESSAGES"] }
+    { intents:["GUILDS", "GUILD_MEMBERS", "GUILD_MESSAGES", "GUILD_INTEGRATIONS"] }
 )
 
 
@@ -9,6 +9,11 @@ client.login(process.env.token)
 client.on("ready", () => {
     console.log("BOT ONLINE!")
 
+    var server = client.guilds.cache.get("871449221247680623")
+    server.commands.create({
+        name: "pong",
+        description: "Comando del pong"
+    })
 })
 
 // TAG BOT + MESSAGGIO
