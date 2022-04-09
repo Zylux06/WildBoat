@@ -11,7 +11,7 @@ client.on("ready", () => {
 
     client.guilds.cache.forEach(guild => {
         guild.commands.create({
-            name: "pong",
+            name: "ping",
             description: "Comando del pong"
         })
     })
