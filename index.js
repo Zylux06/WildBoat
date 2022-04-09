@@ -7,13 +7,22 @@ global.client = new Discord.Client(
 client.login(process.env.token)
 
 client.on("ready", () => {
-    console.log("BOT ONLINE!")
+    console.log("BOT ONLINE!");
 
-    var server = client.guilds.cache.get("871449221247680623")
-    server.commands.create({
-        name: "ping",
-        description: "Comando di test"
+    client.guilds.cache.forEach(guild => {
+        guild.commands.create({
+            name: "ping",
+            description: "Comando di test"
+        })
     })
+})
+
+client.on("interactionCreate", interaction => {
+    if (!interaction.isCommand()) return
+
+    if (interaction.commandName == "ping") {
+        interaction.reply("Pong!")
+    }
 })
 
 
