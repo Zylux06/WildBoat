@@ -9,11 +9,20 @@ client.login(process.env.token)
 client.on("ready", () => {
     console.log("BOT ONLINE!")
 
-    var server = client.guilds.cache.get("871449221247680623")
-    server.commands.create({
-        name: "pong",
-        description: "Comando del pong"
+    client.guilds.cache.forEach(guild => {
+        guild.commands.create({
+            name: "pong",
+            description: "Comando del pong"
+        })
     })
+})
+
+client.on("interactionCreate", Interaction => {
+    if(!interaction.isCommand()) return
+
+    if(interaction.commandName == "ping") {
+        interaction.reply("Pongs!!")
+    }
 })
 
 // TAG BOT + MESSAGGIO
@@ -26,6 +35,7 @@ setInterval(function () {
     var canale = client.channels.cache.get("935916375636058152");
     canale.setName(`😜 Membri Totali: ${canale.guild.memberCount}`);
 }, 1000 * 60 * 5)
+const { Interaction } = require("discord.js")
 // FINE STATS
 
 // MANTENERE I FILES ORDINATI
