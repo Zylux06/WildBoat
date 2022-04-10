@@ -1,8 +1,8 @@
 const { MessageActionRow, MessageButton } = require('discord.js');
 
 module.exports = {
-    name: "bottoni",
-    description: "bottoni discord",
+    name: "command",
+    description: "lista comandi bot",
     execute(message, args) {
 
 
@@ -35,8 +35,14 @@ module.exports = {
                     collector.on("collect", i => {
                         if(i.customId == 'IdBut1') {
                             let embed = new Discord.MessageEmbed()
-                            .addField("!ban", "ban")
-                            .addField("!kick", "kick")
+                            .addField('w!ban', 'Per bannare un utente;')
+                            .addField('w!un-ban', 'Per sbannare un utente;')
+                            .addField('w!kick', 'Per espellere un utente;')
+                            .addField('w!ann', 'Per annullare un Azione RP;')
+                            .addField('w!aperto', "Per comunicare l'apertura dei bandi Staff;")
+                            .addField('w!chiuso', "Per comunicare la chiusura dei bandi Staff;")
+                            .addField('w!clear', "Per eliminare dei messaggi in Chat;")
+                            .addField('w!infraction', "Per dare un Warn a un utente.")
                             .setColor("YELLOW")
                             i.reply({embeds: [embed]})
                             }
