@@ -10,9 +10,9 @@ module.exports = {
 			.addComponents(
 				new MessageButton()
 					.setCustomId('IdBut1')
-					.setLabel('Clicca!')
+					.setLabel('Comandi Staff')
 					.setStyle('SUCCESS')
-                    .setEmoji('😜')
+                    .setEmoji('🔨')
             )        
             .addComponents(
 				new MessageButton()
@@ -23,9 +23,9 @@ module.exports = {
             )        
             
                 var embed = new Discord.MessageEmbed()    
-                    .setTitle("⭐__Buttons__⭐")
+                    .setTitle("Lista dei Comandi di WildRP Bot")
                     .setColor("RANDOM")
-                    .setDescription("Ciao")
+                    .setDescription("Ecco la lista completa dei comandi del bot!")
 
                 message.channel.send({embeds: [embed], components: [row]})
 
