@@ -19,7 +19,7 @@ module.exports = {
         var embed = new Discord.MessageEmbed()
             .setTitle("**__🏃🏻‍♂️Azione RP🏃🏻‍♂️__**")
             .setColor("RANDOM")
-            .setDescription(`*${message.author.toString()} = ${testo}*`)
+            .setDescription(`*${message.author.toString()} ➪ ${testo}*`)
             .setTimestamp()
 
             message.channel.send({ embeds: [embed] })
