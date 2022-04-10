@@ -26,6 +26,8 @@ module.exports = {
                     .setTitle("__**Lista dei Comandi di WildRP Bot**__")
                     .setColor("RANDOM")
                     .setDescription(`*${message.author.toString()} Ecco a te la lista completa dei comandi del bot!*`)
+                    .setFooter({text: "Lista Comandi"})
+                    .setTimestamp()
 
                 message.channel.send({embeds: [embed], components: [row]})
 
@@ -44,6 +46,8 @@ module.exports = {
                             .addField('`w!clear`', "**Per eliminare dei messaggi in Chat;**")
                             .addField('`w!infraction`', "**Per dare un Warn a un utente.**")
                             .setColor("RANDOM")
+                            .setFooter({text: "Lista Comandi Staff"})
+                            .setTimestamp()
                             i.reply({embeds: [embed]})
                             }
 
@@ -63,7 +67,10 @@ module.exports = {
                                 .addField('`w!poll`', "**Per mandare un sondaggio;**")
                                 .addField('`w!server-info`', "**Per vedere le informazioni sul Server;**")
                                 .addField('`w!sole`', "**Per annunciare che che ci sarà il Sole;**")
-                                .addField('`w!sup`', "**Per richiedere supporto allo Staff del Server.**")                            
+                                .addField('`w!sup`', "**Per richiedere supporto allo Staff del Server.**")   
+                                .setColor("RANDOM")
+                                .setFooter({text: "Lista Comandi RP"}) 
+                                .setTimestamp()                        
                                 i.reply({embeds: [embed]})
                                 }
                     })
