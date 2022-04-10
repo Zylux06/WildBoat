@@ -37,6 +37,7 @@ module.exports = {
                     collector.on("collect", i => {
                         if(i.customId == 'IdBut1') {
                             let embed = new Discord.MessageEmbed()
+                            .setTitle("🔨__**Comandi Staff**__🔨")
                             .addField('`w!ban`', '**Per bannare un utente;**')
                             .addField('`w!un-ban`', '**Per sbannare un utente;**')
                             .addField('`w!kick`', '**Per espellere un utente;**')
@@ -53,6 +54,7 @@ module.exports = {
 
                             if(i.customId == 'IdBut2') {
                                 let embed = new Discord.MessageEmbed()
+                                .setTitle("🏃🏻‍♂️__**Comandi RP**__🏃🏻‍♂️")
                                 .addField('`w!afk`', "**Per andare ad AFK;**")
                                 .addField('`w!annuncio`', "**Per mandare un'annuncio in Chat;**")
                                 .addField('`w!anon`', "**Per mandare un messaggio in anonimo**")
