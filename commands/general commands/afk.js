@@ -16,8 +16,8 @@ module.exports = {
         var embed = new Discord.MessageEmbed()
             .setColor("RANDOM")
             .setTitle("😴__Utente AFK__😴")
-            .addField('Motivo:', `${testo}`)
             .addField('Utente AFK:', `${message.author.toString()}`)
+            .addField('Motivo:', `${testo}`)
             .setFooter({text: "Utente Andato AFK"})
             .setTimestamp()
 
