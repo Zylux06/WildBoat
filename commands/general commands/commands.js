@@ -70,7 +70,7 @@ module.exports = {
                                 .addField('`w!server-info`', "**Per vedere le informazioni sul Server;**")
                                 .addField('`w!sole`', "**Per annunciare che che ci sarà il Sole;**")
                                 .addField('`w!sup`', "**Per richiedere supporto allo Staff del Server.**")
-                                .addField('``w!wz`', "**Per mandare un messaggio tramite Whatsapp**")  
+                                .addField('`w!wz`', "**Per mandare un messaggio tramite Whatsapp**")  
                                 .setColor("RANDOM")
                                 .setFooter({text: "Lista Comandi RP"}) 
                                 .setTimestamp()                        
