@@ -33,11 +33,13 @@ module.exports = {
                     const collector = msg.createMessageComponentCollector()
                     
                     collector.on("collect", i => {
-                        let embed = new Discord.MessageEmbed()
-                        .addField("!ban", "ban")
-                        .addField("!kick", "kick")
-                        .setColor("YELLOW")
-                        i.reply({embeds: [embed]})
+                        if(i.customId == 'IdBut1') {
+                            let embed = new Discord.MessageEmbed()
+                            .addField("!ban", "ban")
+                            .addField("!kick", "kick")
+                            .setColor("YELLOW")
+                            i.reply({embeds: [embed]})
+                            }
                     })
                     })
 
