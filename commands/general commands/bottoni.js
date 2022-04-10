@@ -17,15 +17,15 @@ module.exports = {
             .addComponents(
 				new MessageButton()
 					.setCustomId('IdBut2')
-					.setLabel('Cliccami!')
+					.setLabel('Comandi RP')
 					.setStyle('DANGER')
-                    .setEmoji('📌')
+                    .setEmoji('🏃🏻‍♂️')
             )        
             
                 var embed = new Discord.MessageEmbed()    
-                    .setTitle("Lista dei Comandi di WildRP Bot")
+                    .setTitle("__**Lista dei Comandi di WildRP Bot**__")
                     .setColor("RANDOM")
-                    .setDescription("Ecco la lista completa dei comandi del bot!")
+                    .setDescription(`*${message.author.toString()} Ecco a te la lista completa dei comandi del bot!*`)
 
                 message.channel.send({embeds: [embed], components: [row]})
 
@@ -43,7 +43,7 @@ module.exports = {
                             .addField('`w!chiuso`', "**Per comunicare la chiusura dei bandi Staff;**")
                             .addField('`w!clear`', "**Per eliminare dei messaggi in Chat;**")
                             .addField('`w!infraction`', "**Per dare un Warn a un utente.**")
-                            .setColor("YELLOW")
+                            .setColor("RANDOM")
                             i.reply({embeds: [embed]})
                             }
                     })
