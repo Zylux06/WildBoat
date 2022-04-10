@@ -17,6 +17,7 @@ module.exports = {
             .setColor("RANDOM")
             .setTitle("😴__Utente AFK__😴")
             .addField('Utente AFK:', `${message.author.toString()}`)
+            .addField('Motivo:', `${testo}`)
             .setFooter({text: "Utente Andato AFK"})
             .setImage(utente.user.displayAvatarURL({
                 dynamic: true,
