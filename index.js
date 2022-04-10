@@ -9,21 +9,7 @@ client.login(process.env.token)
 client.on("ready", () => {
     console.log("BOT ONLINE!");
 
-    client.guilds.cache.forEach(guild => {
-        guild.command.create({
-            name: "ping",
-            description: "comando di test!"
-        })
-    })
 })
-
-client.on("interactionCreate", interaction => {
-    if (!interaction.isCommand()) return
-
-    if (interaction.commandName == "ping") {
-        interaction.reply("Pongs!")
-    }
- })
 
 
 // TAG BOT + MESSAGGIO
