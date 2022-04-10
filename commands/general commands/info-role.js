@@ -27,6 +27,7 @@ module.exports = {
             
             var embed = new Discord.MessageEmbed()
                 .setTitle(ruolo.name)
+                .setColor("RANDOM")
                 .setDescription("__**Tutte le statistiche di questo ruolo!**__")
                 .addField("**Role ID:**", ruolo.id, true)
                 .addField("**Members:**", memberCount.toString(), true)
