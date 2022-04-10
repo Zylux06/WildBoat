@@ -16,8 +16,8 @@ module.exports = {
             .setTitle("__**Messaggio Whatsapp**__")
             .setColor("GREEN")
             .setThumbnail("https://cdn.discordapp.com/attachments/935843968665669683/962733117792202823/unknown.png")
-            .addField('Emittente:', `${message.author.toString()}`)
-            .addField('Messaggio:', `${testo}`)
+            .addField('`Emittente:`', `${message.author.toString()}`)
+            .addField('`Messaggio:`', `**${testo}**`)
             .setFooter({text: "Whatsapp"})
             .setTimestamp()
 
