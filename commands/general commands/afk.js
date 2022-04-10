@@ -19,11 +19,6 @@ module.exports = {
             .addField('Motivo:', `${testo}`)
             .addField('Utente AFK:', `${message.author.toString()}`)
             .setFooter({text: "Utente Andato AFK"})
-            .setImage(utente.user.displayAvatarURL({
-                dynamic: true,
-                format: "png",
-                size: 512
-            }))
             .setTimestamp()
 
             message.channel.send({embeds: [embed]})
