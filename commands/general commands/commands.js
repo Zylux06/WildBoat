@@ -1,7 +1,7 @@
 const { MessageActionRow, MessageButton } = require('discord.js');
 
 module.exports = {
-    name: "command",
+    name: "commands",
     description: "lista comandi bot",
     execute(message, args) {
 
