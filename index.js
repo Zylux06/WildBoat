@@ -10,6 +10,9 @@ client.on("ready", () => {
 
 })
 
+client.on('ready', () => {
+    client.user.setActivity('w!commands', { type: 'WATCHING' }); 
+})
 
 // TAG BOT + MESSAGGIO
 client.on("messageCreate", message => {
