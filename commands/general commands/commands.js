@@ -61,6 +61,7 @@ module.exports = {
                                 .addField('`w!commands`', "**Per vedere le liste complete dei comandi del Bot;**")
                                 .addField('`w!gmail`', "**Per mandare una Mail;**")
                                 .addField('`w!info-role`', "**Per vedere tutte le informazioni su un determinato Ruolo;**")
+                                .addField('`w!me`', "**Per fare un'azione RP;**")
                                 .addField('`w!nevica`', "**Per annunciare che sta iniziando a Nevicare;**")
                                 .addField('`w!news`', "**Per mandare una News;**")
                                 .addField('`w!nuvoloso`', "**Per annunciare che il Tempo si sta Annuvolando**")
