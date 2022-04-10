@@ -12,6 +12,8 @@ client.on("ready", () => {
 
 client.on('ready', () => {
     client.user.setActivity('w!commands', { type: 'WATCHING' }); 
+    
+    client.user.setStatus('idle')
 })
 
 // TAG BOT + MESSAGGIO
