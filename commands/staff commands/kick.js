@@ -17,6 +17,7 @@ module.exports = {
         
         message.delete()
         utente.kick()
+        
             .then(() => {
                 var embed = new Discord.MessageEmbed()
                     .setColor("RANDOM")
