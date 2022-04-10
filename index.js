@@ -9,6 +9,12 @@ client.login(process.env.token)
 client.on("ready", () => {
     console.log("BOT ONLINE!");
 
+    var server = clien.guilds.cache.get("871449221247680623")
+    server.command.create({
+        name: "ping",
+        description: "comando di test!"
+    })
+
 })
 
 
