@@ -28,12 +28,16 @@ module.exports = {
                     .setDescription("Ciao")
 
                 message.channel.send({embeds: [embed], components: [row]})
-                
+
                 .then(msg => {
                     const collector = msg.createMessageComponentCollector()
                     
                     collector.on("collect", i => {
-                    //codice
+                        let embed = new Discord.MessageEmbed()
+                        .addField("!ban", "ban")
+                        .addField("!kick", "kick")
+                        .setColor("YELLOW")
+                        i.reply({embeds: [embed]})
                     })
                     })
 
