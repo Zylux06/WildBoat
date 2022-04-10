@@ -1,7 +1,7 @@
 const Discord = require('discord.js')
 
 module.exports = {
-    name: "role",
+    name: "info-role",
     description: "per vedere le info su un ruolo",
     execute(message, args) {
 

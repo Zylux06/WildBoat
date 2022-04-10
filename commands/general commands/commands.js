@@ -1,43 +1,73 @@
-const Discord = require("discord.js")
+const { MessageActionRow, MessageButton } = require('discord.js');
 
 module.exports = {
-    name: "commands",
-    description: "lista dei comandi del bot Wild",
+    name: "command",
+    description: "lista comandi bot",
     execute(message, args) {
 
-        message.delete()
 
-        var embed = new Discord.MessageEmbed()
-            .setTitle("📄__Commands Wild RP Bot!__📄")
-            .setColor("RANDOM")
-            .setDescription("**I comandi contrassegnati con il simbolo `★` sono solo utilizzabili dallo Staff del Server.**")
-            .setThumbnail("https://cdn.discordapp.com/attachments/935843412056350730/944645915459866725/check_list_visto_di_conformita.png")
-            .addField('**w!sup**', '*Per richiedere assistenza allo Staff del Server;*')
-            .addField('**w!anon**', '*Per scrivere un messaggio anonimo in chat;*')
-            .addField('**w!role**', '*Per vedere le informazioni su un determinato ruolo;*')
-            .addField('**w!server-info**', '*Per ottenere le informazioni sul Server;*')
-            .addField('**w!user-info**', '*Per ottenere le informazioni su qualsiasi ruolo;*')
-            .addField('**w!afk**', '*Per andare a AFK;*')
-            .addField('**w!poll**', '*Per fare un sondaggio;*')
-            .addField('**w!news**', '*★ Per mandare una notizia/news;*')
-            .addField('**w!annuncio**', '*Per poter inviare un annuncio su qualsiasi chat testuale;*')
-            .addField('**w!gmail**', '*Per inviare una email a un utente!;*')
-            .addField('**w!sole**', '*Per annunciare che a Los Angeles ce il sole;*')
-            .addField('**w!piove**', '*Per annunciare che a Los Angeles sta per piovere;*')
-            .addField('**w!nevica**', '*Per annunciare a Los Angeles inizierà a nevicare;*')
-            .addField('**w!nuvoloso**', '*Per annunciare che a Los Angeles il tempo inizia a scurirsi di nuvole;*')
-            .addField('**w!commands**', '*Per vedere tutta la lista completa dei comandi del bot;*')
-            .addField('**w!infraction**', '*★ Per warnare un utente;*')
-            .addField('**w!aperto**', '*★ Per aprire i bandi Staff;*')
-            .addField('**w!chiuso**', '*★ Per chiudere i bandi Staff;*')
-            .addField('**w!ann**', '*★ Per annullare un Azione RP;*')
-            .addField('**w!ban**', '*★ Per bannare una persona dal Server Discord;*')
-            .addField('**w!kick**', '*★ Per espellere una persona sul Server Discord;*')
-            .addField('**w!un-ban**', '*★ Per sbannare una persona dal Server Discord;*')
-            .addField('**w!clear**', '*★ Per cancellare dei messaggi all interno di una chat.*')
-            .setFooter({text: "Commands List"})
-            .setTimestamp()
+        let row = new MessageActionRow()
+			.addComponents(
+				new MessageButton()
+					.setCustomId('IdBut1')
+					.setLabel('Comandi Staff')
+					.setStyle('SUCCESS')
+                    .setEmoji('🔨')
+            )        
+            .addComponents(
+				new MessageButton()
+					.setCustomId('IdBut2')
+					.setLabel('Comandi RP')
+					.setStyle('DANGER')
+                    .setEmoji('🏃🏻‍♂️')
+            )        
+            
+                var embed = new Discord.MessageEmbed()    
+                    .setTitle("__**Lista dei Comandi di WildRP Bot**__")
+                    .setColor("RANDOM")
+                    .setDescription(`*${message.author.toString()} Ecco a te la lista completa dei comandi del bot!*`)
 
-            message.channel.send({ embeds: [embed] })
+                message.channel.send({embeds: [embed], components: [row]})
 
-    }}
+                .then(msg => {
+                    const collector = msg.createMessageComponentCollector()
+                    
+                    collector.on("collect", i => {
+                        if(i.customId == 'IdBut1') {
+                            let embed = new Discord.MessageEmbed()
+                            .addField('`w!ban`', '**Per bannare un utente;**')
+                            .addField('`w!un-ban`', '**Per sbannare un utente;**')
+                            .addField('`w!kick`', '**Per espellere un utente;**')
+                            .addField('`w!ann`', '**Per annullare un Azione RP;**')
+                            .addField('`w!aperto`', "**Per comunicare l'apertura dei bandi Staff;**")
+                            .addField('`w!chiuso`', "**Per comunicare la chiusura dei bandi Staff;**")
+                            .addField('`w!clear`', "**Per eliminare dei messaggi in Chat;**")
+                            .addField('`w!infraction`', "**Per dare un Warn a un utente.**")
+                            .setColor("RANDOM")
+                            i.reply({embeds: [embed]})
+                            }
+
+                            if(i.customId == 'IdBut2') {
+                                let embed = new Discord.MessageEmbed()
+                                .addField('`w!afk`', "**Per andare ad AFK;**")
+                                .addField('`w!annuncio`', "**Per mandare un'annuncio in Chat;**")
+                                .addField('`w!anon`', "**Per mandare un messaggio in anonimo**")
+                                .addField('`w!commands`', "**Per vedere le liste complete dei comandi del Bot;**")
+                                .addField('`w!gmail`', "**Per mandare una Mail;**")
+                                .addField('`w!info-role`', "**Per vedere tutte le informazioni su un determinato Ruolo;**")
+                                .addField('`w!nevica`', "**Per annunciare che sta iniziando a Nevicare;**")
+                                .addField('`w!news`', "**Per mandare una News;**")
+                                .addField('`w!nuvoloso`', "**Per annunciare che il Tempo si sta Annuvolando**")
+                                .addField('`w!ping`', "**Per vedere la Latenza del Bot;**")
+                                .addField('`w!piove`', "**Per annunciare che sta Piovendo;**")
+                                .addField('`w!poll`', "**Per mandare un sondaggio;**")
+                                .addField('`w!server-info`', "**Per vedere le informazioni sul Server;**")
+                                .addField('`w!sole`', "**Per annunciare che che ci sarà il Sole;**")
+                                .addField('`w!sup`', "**Per richiedere supporto allo Staff del Server.**")                            
+                                i.reply({embeds: [embed]})
+                                }
+                    })
+                    })
+
+            }}     
+            
