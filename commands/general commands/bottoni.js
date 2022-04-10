@@ -5,6 +5,7 @@ module.exports = {
     description: "bottoni discord",
     execute(message, args) {
 
+
         let row = new MessageActionRow()
 			.addComponents(
 				new MessageButton()
@@ -27,6 +28,14 @@ module.exports = {
                     .setDescription("Ciao")
 
                 message.channel.send({embeds: [embed], components: [row]})
+                
+                .then(msg => {
+                    const collector = msg.createMessageComponentCollector()
+                    
+                    collector.on("collect", i => {
+                    //codice
+                    })
+                    })
 
             }}     
             
