@@ -46,6 +46,14 @@ module.exports = {
                             .setColor("RANDOM")
                             i.reply({embeds: [embed]})
                             }
+
+                            if(i.customId == 'IdBut2') {
+                                let embed = new Discord.MessageEmbed()
+                                .addField("!ban", "ban")
+                                .addField("!kick", "kick")
+                                .setColor("YELLOW")
+                                i.reply({embeds: [embed]})
+                                }
                     })
                     })
 
