@@ -21,7 +21,7 @@ module.exports = {
 
             message.channel.bulkDelete(count, true)
             message.channel.send(count + "**Messaggi Eliminati con Successo!**").then(msg => {
-                setTimeout(() => msg.delete(), 15000)
+                setTimeout(() => msg.delete(), 10000)
         })
     }
 }   
