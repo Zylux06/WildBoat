@@ -10,9 +10,6 @@ module.exports = {
         if (!testo) {
             return message.channel.send("Inserire un Messaggio");
         }
-    
-        var utente = message.mentions.members.first();
-    
 
         message.delete()
 
