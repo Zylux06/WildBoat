@@ -11,8 +11,7 @@ module.exports = {
         .setTitle("__📩**Ticket Preso In Carica**📩__")
         .setColor("RANDOM")
         .setThumbnail("https://cdn.discordapp.com/attachments/935843968665669683/963122530833539142/unknown.png")
-        .setDescription(`Il Ticket è stato preso in carica da ${message.author.toString()}!`)
-        .setAuthor(`${message.author.toString()}`)
+        .setDescription(`*Il Ticket è stato preso in carica da ${message.author.toString()}!*`)
         .setFooter({text: "Ticket"})
         .setTimestamp()
         
