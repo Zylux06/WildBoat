@@ -39,6 +39,7 @@ module.exports = {
                             let embed = new Discord.MessageEmbed()
                             .setTitle("🔨__**Comandi Staff**__🔨")
                             .addField('`w!ban`', '**Per bannare un utente;**')
+                            .addField('`w!carica`', '**Per prendersi in carica un Ticket;**')
                             .addField('`w!un-ban`', '**Per sbannare un utente;**')
                             .addField('`w!kick`', '**Per espellere un utente;**')
                             .addField('`w!ann`', '**Per annullare un Azione RP;**')
