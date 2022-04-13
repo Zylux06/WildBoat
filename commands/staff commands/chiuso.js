@@ -5,7 +5,7 @@ module.exports = {
     description: "comunicare la chiusura dei bandi Staff!",
     execute(message, args) {
 
-        if (!message.member.permissions.has('MANAGE_MESSAGE')) {
+        if (!message.member.permissions.has('MANAGE_MESSAGES')) {
             return message.channel.send('**Hey, non hai il permesso per fare questo comando! Ti serve il `MANAGE_MESSAGE` (Gestire i messaggi).**');
         }
 
