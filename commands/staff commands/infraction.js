@@ -6,7 +6,7 @@ module.exports = {
     execute(message, args) {
 
         if (!message.member.permissions.has('MANAGE_MESSAGES')) {
-            return message.channel.send('**Hey, non hai il permesso per fare questo comando! Ti serve il `MANAGE_MESSAGE` (Gestire i messaggi).**');
+            return message.channel.send('**Hey, non hai il permesso per fare questo comando! Ti serve il `MANAGE_MESSAGES` (Gestire i messaggi).**');
         }
         
         var testo;
