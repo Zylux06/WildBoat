@@ -5,6 +5,10 @@ module.exports = {
     description: "per prendersi in carica un Ticket",
     execute(message, args) {
 
+        if (!message.member.permissions.has('MANAGE_MESSAGE')) {
+            return message.channel.send('**Hey, non hai il permesso per fare questo comando! Ti serve il `MANAGE_MESSAGE` (Gestire i messaggi).**');
+        }
+
         message.delete()
 
     var embed = new Discord.MessageEmbed()
