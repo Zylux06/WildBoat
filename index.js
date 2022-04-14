@@ -16,7 +16,7 @@ client.on("ready", () => {
     })
 })
 
-client.on("InteractionCreate", interaction => {
+client.on("interactionCreate", interaction => {
     if (!interaction.isCommand()) return
 
     if (!interaction.commandName == "ciao") {
