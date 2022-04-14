@@ -8,12 +8,20 @@ client.login(process.env.token)
 client.on("ready", () => {
     console.log("BOT ONLINE!");
 
-    var server = client.guilds.cache.get("871449221247680623")
-    server.commands.create({
-        name: "ciao",
-        description: "Comando di test"
+    client.guilds.cache.forEach(guild => {
+        guild.commands.create({
+            name: "ciao",
+            description: "Comando di test"
+        })
     })
+})
 
+client.on("InteractionCreate", interaction => {
+    if (!interaction.isCommand()) return
+
+    if (!interaction.commandName == "ciao") {
+        interaction.reply("Hey ciao!")
+    }
 })
 
 client.on('ready', () => {
