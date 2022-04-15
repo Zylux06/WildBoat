@@ -8,6 +8,12 @@ client.login(process.env.token)
 client.on("ready", () => {
     console.log("BOT ONLINE!");
 
+
+    var server = client.guilds.cache.get("871449221247680623")
+    server.commands.create({
+        name: "hey",
+        description: "hey ciaoo!"
+    })
 })
 
 client.on('ready', () => {
