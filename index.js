@@ -57,16 +57,16 @@ client.on("messageCreate", message => {
     const args = message.content.slice(prefix.length).trim().split(/ +/);
     const command = args.shift().toLocaleLowerCase();
 
-    if (!client.commands.has(command)) return
-
-    client.commands.get(command).execute(message, args);
-
-    const cmd = client.commands.get(command) 
-    if (!cmd) {
+    if (!client.commands.has(command)) {
         var embed = new Discord.MessageEmbed()
             .setColor("#ff0000")
             .setTitle("Comando non esistente")
             .setDescription("Il comando non esiste" )
-            return message.channel.send(embed)
-        }
+        return message.channel.send(embed)
+    }
+    
+
+    client.commands.get(command).execute(message, args);
+
+    const cmd = client.commands.get(command) 
 })
