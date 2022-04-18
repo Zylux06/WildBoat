@@ -60,4 +60,12 @@ client.on("messageCreate", message => {
     if (!client.commands.has(command)) return
 
     client.commands.get(command).execute(message, args);
+
+    if (!command) {
+        var embed = new Discord.MessageEmbed()
+            .setColor("#ff0000")
+            .setTitle("Comando non esistente")
+            .setDescription("Il comando non esiste" )
+            return message.channel.send(embed)
+        }
 })
