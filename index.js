@@ -61,7 +61,8 @@ client.on("messageCreate", message => {
 
     client.commands.get(command).execute(message, args);
 
-    if (!command) {
+    const cmd = client.commands.get(command) 
+    if (!cmd) {
         var embed = new Discord.MessageEmbed()
             .setColor("#ff0000")
             .setTitle("Comando non esistente")
