@@ -29,7 +29,7 @@ module.exports = {
                     .setFooter({text: "Lista Comandi"})
                     .setTimestamp()
 
-                message.channel.send({embeds: [embed], components: [row]})
+                message.channel.send({ embeds: [embed], components: [row], ephemeral: true })
 
                 .then(msg => {
                     const collector = msg.createMessageComponentCollector()
@@ -50,7 +50,7 @@ module.exports = {
                             .setColor("RANDOM")
                             .setFooter({text: "Lista Comandi Staff"})
                             .setTimestamp()
-                            i.reply({embeds: [embed]})
+                            i.reply({ embeds: [embed], ephemeral: true }) 
                             }
 
                             if(i.customId == 'IdBut2') {
@@ -76,7 +76,7 @@ module.exports = {
                                 .setColor("RANDOM")
                                 .setFooter({text: "Lista Comandi RP"}) 
                                 .setTimestamp()                        
-                                i.reply({embeds: [embed], ephemeral: true})
+                                i.reply({ embeds: [embed], ephemeral: true })
 
                                 }
                             })

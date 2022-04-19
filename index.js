@@ -3,7 +3,7 @@ global.client = new Discord.Client(
     { intents:["GUILDS", "GUILD_MEMBERS", "GUILD_MESSAGES", "GUILD_INTEGRATIONS"] }
 )
 
-client.login(process.env.token)
+client.login(process.env.token) 
 
 client.on("ready", () => {
     console.log("BOT ONLINE!");
@@ -57,17 +57,17 @@ client.on("messageCreate", message => {
     const args = message.content.slice(prefix.length).trim().split(/ +/);
     const command = args.shift().toLocaleLowerCase();
 
-    if (!client.commands.has(command)) return
+    if (!client.commands.has(command)) {
+        var embed = new Discord.MessageEmbed()
+            .setColor("#ff0000")
+            .setTitle("__**Errore!**__")
+            .setDescription("**__Attenzione, il comando che hai appena scritto non è corretto!__ Assicurati di scriverlo correttamente, ti consigliamo di vedere la lista completa dei comandi del bot `w!commands`.**")
+            .setFooter({text: "Messaggio d'Errore"})
+            .setTimestamp()
+        return message.channel.send({ embeds: [embed] })
+    }
     
-
     client.commands.get(command).execute(message, args);
 
     const cmd = client.commands.get(command) 
-    if (!cmd) {
-        var embed = new Discord.MessageEmbed()
-            .setColor("#ff0000")
-            .setTitle("Comando non esistendte")
-            .setDescription("Il comando non esiste!" )
-        return message.channel.send(embed)
-    }
 })
