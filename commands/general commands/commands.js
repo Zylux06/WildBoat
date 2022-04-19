@@ -76,10 +76,11 @@ module.exports = {
                                 .setColor("RANDOM")
                                 .setFooter({text: "Lista Comandi RP"}) 
                                 .setTimestamp()                        
-                                i.reply({embeds: [embed]})
+                                i.reply({embeds: [embed], ephemeral: true})
+
                                 }
-                    })
+                            })
                     })
 
-            }}     
+                }}     
             
