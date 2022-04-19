@@ -61,7 +61,7 @@ client.on("messageCreate", message => {
         var embed = new Discord.MessageEmbed()
             .setColor("#ff0000")
             .setTitle("Comando non esistente")
-            .setDescription("Il comando non esiste" )
+            .setDescription("Il comando non esiste!" )
         return message.channel.send(embed)
     }
     
