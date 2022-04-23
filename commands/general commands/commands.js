@@ -46,7 +46,6 @@ module.exports = {
                             .addField('`w!aperto`', "**[Per comunicare l'apertura dei bandi Staff;]**")
                             .addField('`w!chiuso`', "**[Per comunicare la chiusura dei bandi Staff;]**")
                             .addField('`w!clear`', "**[Per eliminare dei messaggi in Chat;]**")
-                            .addField('`w!infraction`', "**[Per dare un Warn a un utente.]**")
                             .setColor("RANDOM")
                             .setFooter({text: "Lista Comandi Staff"})
                             .setTimestamp()
