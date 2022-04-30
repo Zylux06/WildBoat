@@ -55,7 +55,7 @@ module.exports = {
                             if(i.customId == 'IdBut2') {
                                 let embed = new Discord.MessageEmbed()
                                 .setTitle("🏃🏻‍♂️__**Comandi RP**__🏃🏻‍♂️")
-                                .addField('`w!afk`', "**[Per andare ad AFK;]**")
+                                .addField('`w!afk`', "**[Per andare AFK;]**")
                                 .addField('`w!annuncio`', "**[Per mandare un'annuncio in Chat;]**")
                                 .addField('`w!anon`', "**[Per mandare un messaggio in anonimo;]**")
                                 .addField('`w!commands`', "**[Per vedere le liste complete dei comandi del Bot;]**")
