@@ -17,7 +17,7 @@ module.exports = {
         message.delete()
 
         var embed = new Discord.MessageEmbed()
-            .setTitle("__Anon Message!__")
+            .setTitle("__🔪Anon Message!🔪__")
             .setColor("BLACK")
             .setDescription(`**\n${testo}**`)
             .setThumbnail("https://cdn.discordapp.com/attachments/935843412056350730/940281402816098324/anonimo.png")
